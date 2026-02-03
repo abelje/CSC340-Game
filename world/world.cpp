@@ -50,7 +50,7 @@ void World::update(float dt) {
     future.y = position.y;
     if (has_any_collisions(future)) {
         player->velocity.y = 0;
-        player->acceleration.y = acceleration.y;
+        player->acceleration.y = gravity;
     }
     else {
         player->velocity.y = velocity.y;
