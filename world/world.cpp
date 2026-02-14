@@ -37,6 +37,7 @@ void World::update(float dt) {
     position += velocity * dt;
     velocity += 0.5f * acceleration * dt;
     velocity.x *= player->physics.damping;
+    velocity.y *= player->physics.damping;
 
     // No infinite speed
     velocity.x = std::clamp(velocity.x, -player->physics.terminal_velocity, player->physics.terminal_velocity);
