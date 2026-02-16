@@ -12,7 +12,11 @@ Game::Game(std::string title, int width, int height)
 
     // platforms
     world.add_platform(3, 7, 4, 1);
-    world.add_platform(13, 4, 6, 1);
+    world.add_platform(13, 1, 6, 1);
+
+    world.add_platform(7, 8, 1, 1);
+    world.add_platform(12, 3, 1, 1);
+
 
     player = world.create_player(world);
     camera.set_location(player->physics.position);
