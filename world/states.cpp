@@ -20,6 +20,7 @@ void Standing::on_enter(World&, GameObject& obj) {
 
     // Stop acceleration so damping will stop you
     obj.physics.acceleration.x = 0;
+    obj.physics.acceleration.y = 0;
 }
 
 Action *Standing::input(World& world, GameObject& obj, ActionType action_type) {
@@ -27,9 +28,21 @@ Action *Standing::input(World& world, GameObject& obj, ActionType action_type) {
         obj.fsm->transition(Transition::Jump, world, obj);
         return new Jump();
     }
-    else if (action_type == ActionType::MoveRight) {
+    if (action_type == ActionType::MoveRight) {
         obj.fsm->transition(Transition::Move, world, obj);
         return new MoveRight();
+    }
+    else if (action_type == ActionType::MoveLeft) {
+        obj.fsm->transition(Transition::Move, world, obj);
+        return new MoveLeft();
+    }
+    if (action_type == ActionType::MoveUp) {
+        obj.fsm->transition(Transition::Move, world, obj);
+        return new MoveUp();
+    }
+    else if (action_type == ActionType::MoveDown) {
+        obj.fsm->transition(Transition::Move, world, obj);
+        return new MoveDown();
     }
     return nullptr;
 }
@@ -59,6 +72,23 @@ Action* Running::input(World& world, GameObject& obj, ActionType action_type) {
     if (action_type == ActionType::None) {
         obj.fsm->transition(Transition::Stop, world, obj);
     }
+    // Be able to run different directions while running?
+    // if (action_type == ActionType::MoveRight) {
+    //     obj.fsm->transition(Transition::Move, world, obj);
+    //     return new MoveRight();
+    // }
+    // if (action_type == ActionType::MoveLeft) {
+    //     obj.fsm->transition(Transition::Move, world, obj);
+    //     return new MoveLeft();
+    // }
+    // if (action_type == ActionType::MoveUp) {
+    //     obj.fsm->transition(Transition::Move, world, obj);
+    //     return new MoveUp();
+    // }
+    // if (action_type == ActionType::MoveDown) {
+    //     obj.fsm->transition(Transition::Move, world, obj);
+    //     return new MoveDown();
+    // }
     else if (action_type == ActionType::Jump) {
         obj.fsm->transition(Transition::Jump, world, obj);
         return new Jump();
