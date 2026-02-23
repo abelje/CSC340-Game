@@ -3,9 +3,13 @@
 #include "physics.h"
 #include "world.h"
 #include "graphics.h"
+#include "action.h"
+#include "fsm.h"
 
-GameObject::GameObject(const Vec<float> &position, const Vec<int> &size, World &world)
-    : physics{position, {0,0}, {0, 0}}, size{size} {}
+GameObject::GameObject(const Vec<float> &position, const Vec<int> &size, World &world, FSM* fsm, Color color)
+    : physics{position, {0,0}, {0, 0}}, size{size}, fsm{fsm}, color{color} {
+    fsm->current_state->on_enter(world, *this);
+}
 
 GameObject::~GameObject() {
 
@@ -14,19 +18,24 @@ GameObject::~GameObject() {
 void GameObject::input(World &world) {
     const bool *key_states = SDL_GetKeyboardState(NULL);
 
-    physics.acceleration.x = 0;
-    physics.acceleration.y = 0;
+    ActionType action_type = ActionType::None;
     if (key_states[SDL_SCANCODE_W]) {
-        physics.acceleration.y += physics.walk_acceleration;
+        action_type = ActionType::MoveUp;
     }
     if (key_states[SDL_SCANCODE_A]) {
-        physics.acceleration.x += -physics.walk_acceleration;
+        action_type = ActionType::MoveLeft;
     }
     if (key_states[SDL_SCANCODE_S]) {
-        physics.acceleration.y += -physics.walk_acceleration;
+        action_type = ActionType::MoveDown;
     }
     if (key_states[SDL_SCANCODE_D]) {
-        physics.acceleration.x += physics.walk_acceleration;
+        action_type = ActionType::MoveRight;
+    }
+
+    Action* action = fsm->current_state->input(world, *this, action_type);
+    if (action != nullptr) {
+        action->perform(world, *this);
+        delete action;
     }
 }
 
