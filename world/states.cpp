@@ -66,7 +66,7 @@ void InAir::update(World& world, GameObject& obj, double dt) {
 
 // Running
 void Running::on_enter(World&, GameObject& obj) {
-    obj.color = {255, 255, 0, 255};
+    obj.color = Color{255, 255, 0, 255};
 }
 
 Action* Running::input(World& world, GameObject& obj, ActionType action_type) {

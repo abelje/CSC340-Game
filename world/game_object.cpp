@@ -71,5 +71,5 @@ void GameObject::update(World &world, double dt) {
 }
 
 std::pair<Vec<float>, Color> GameObject::get_sprite() const {
-    return {physics.position,{255, 0, 255, 255}};
+    return {physics.position,color};
 }
