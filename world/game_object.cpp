@@ -1,5 +1,7 @@
 #include "game_object.h"
 
+#include <iostream>
+
 #include "physics.h"
 #include "world.h"
 #include "graphics.h"
@@ -19,16 +21,41 @@ void GameObject::input(World &world) {
     const bool *key_states = SDL_GetKeyboardState(NULL);
 
     ActionType action_type = ActionType::None;
-    if (key_states[SDL_SCANCODE_W]) {
+
+    // check for both W,D -> UpRight
+    if (key_states[SDL_SCANCODE_W] && key_states[SDL_SCANCODE_D]) {
+        action_type = ActionType::MoveUpRight;
+    }
+    // check for both W,A -> UpLeft
+    else if (key_states[SDL_SCANCODE_W] && key_states[SDL_SCANCODE_A]) {
+        action_type = ActionType::MoveUpLeft;
+    }
+    // check for both W,S -> Stop
+    else if (key_states[SDL_SCANCODE_W] && key_states[SDL_SCANCODE_S]) {
+        action_type = ActionType::None;
+    }
+    // check A,D -> Stop
+    else if (key_states[SDL_SCANCODE_A] && key_states[SDL_SCANCODE_D]) {
+        action_type = ActionType::None;
+    }
+    // check for both S,A -> DownLeft
+    else if (key_states[SDL_SCANCODE_S] && key_states[SDL_SCANCODE_A]) {
+        action_type = ActionType::MoveDownLeft;
+    }
+    // check for both S,D -> DownRight
+    else if (key_states[SDL_SCANCODE_S] && key_states[SDL_SCANCODE_D]) {
+        action_type = ActionType::MoveDownRight;
+    }
+    else if (key_states[SDL_SCANCODE_W]) {
         action_type = ActionType::MoveUp;
     }
-    if (key_states[SDL_SCANCODE_A]) {
+    else if (key_states[SDL_SCANCODE_A]) {
         action_type = ActionType::MoveLeft;
     }
-    if (key_states[SDL_SCANCODE_S]) {
+    else if (key_states[SDL_SCANCODE_S]) {
         action_type = ActionType::MoveDown;
     }
-    if (key_states[SDL_SCANCODE_D]) {
+    else if (key_states[SDL_SCANCODE_D]) {
         action_type = ActionType::MoveRight;
     }
 

@@ -32,7 +32,7 @@ Action *Standing::input(World& world, GameObject& obj, ActionType action_type) {
         obj.fsm->transition(Transition::Move, world, obj);
         return new MoveRight();
     }
-    else if (action_type == ActionType::MoveLeft) {
+    if (action_type == ActionType::MoveLeft) {
         obj.fsm->transition(Transition::Move, world, obj);
         return new MoveLeft();
     }
@@ -40,10 +40,11 @@ Action *Standing::input(World& world, GameObject& obj, ActionType action_type) {
         obj.fsm->transition(Transition::Move, world, obj);
         return new MoveUp();
     }
-    else if (action_type == ActionType::MoveDown) {
+    if (action_type == ActionType::MoveDown) {
         obj.fsm->transition(Transition::Move, world, obj);
         return new MoveDown();
     }
+
     return nullptr;
 }
 
@@ -73,22 +74,22 @@ Action* Running::input(World& world, GameObject& obj, ActionType action_type) {
         obj.fsm->transition(Transition::Stop, world, obj);
     }
     // Be able to run different directions while running?
-    // if (action_type == ActionType::MoveRight) {
-    //     obj.fsm->transition(Transition::Move, world, obj);
-    //     return new MoveRight();
-    // }
-    // if (action_type == ActionType::MoveLeft) {
-    //     obj.fsm->transition(Transition::Move, world, obj);
-    //     return new MoveLeft();
-    // }
-    // if (action_type == ActionType::MoveUp) {
-    //     obj.fsm->transition(Transition::Move, world, obj);
-    //     return new MoveUp();
-    // }
-    // if (action_type == ActionType::MoveDown) {
-    //     obj.fsm->transition(Transition::Move, world, obj);
-    //     return new MoveDown();
-    // }
+    if (action_type == ActionType::MoveUpRight) {
+        obj.fsm->transition(Transition::Move, world, obj);
+        return new MoveUpRight();
+    }
+    if (action_type == ActionType::MoveUpLeft) {
+        obj.fsm->transition(Transition::Move, world, obj);
+        return new MoveUpLeft();
+    }
+    if (action_type == ActionType::MoveDownLeft) {
+        obj.fsm->transition(Transition::Move, world, obj);
+        return new MoveDownLeft();
+    }
+    if (action_type == ActionType::MoveDownRight) {
+        obj.fsm->transition(Transition::Move, world, obj);
+        return new MoveDownRight();
+    }
     else if (action_type == ActionType::Jump) {
         obj.fsm->transition(Transition::Jump, world, obj);
         return new Jump();
