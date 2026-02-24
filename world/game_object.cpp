@@ -22,6 +22,9 @@ void GameObject::input(World &world) {
 
     ActionType action_type = ActionType::None;
 
+    if (key_states[SDL_SCANCODE_LCTRL] || key_states[SDL_SCANCODE_RCTRL]) {
+        action_type = ActionType::Sprint;
+    }
     // check for both W,D -> UpRight
     if (key_states[SDL_SCANCODE_W] && key_states[SDL_SCANCODE_D]) {
         action_type = ActionType::MoveUpRight;
