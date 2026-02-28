@@ -45,8 +45,6 @@ void MoveDownRight::perform(World&, GameObject& obj) {
 
 void Sprint::perform(World&, GameObject& obj) {
     obj.physics.walk_acceleration *= 2;
-    // obj.physics.acceleration.x *= 2;
-    // obj.physics.acceleration.y *= 2;
 }
 
 void Decelerate::perform(World&, GameObject& obj) {
