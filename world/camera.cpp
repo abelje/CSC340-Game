@@ -94,6 +94,6 @@ void Camera::render(const Vec<float> &position, const Sprite &sprite) const {
 
 void Camera::render(const GameObject &obj) const {
     // Debug Box
-    // render(obj.physics.position, obj.color);
+    render(obj.physics.position, obj.color);
     render(obj.physics.position, obj.sprite);
 }
