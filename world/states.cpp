@@ -105,11 +105,11 @@ Action *Sprinting::input(World& world, GameObject& obj, ActionType action_type) 
     if (action_type == ActionType::None) {
         obj.fsm->transition(Transition::Stop, world, obj);
     }
-    // if (action_type == ActionType::Decelerate) {
-    //     obj.fsm->transition(Transition::Decelerate, world, obj);
-    //     obj.color = Color{0, 0, 0, 255};
-    //     return new Decelerate();
-    // }
+    if (action_type == ActionType::Decelerate) {
+        obj.fsm->transition(Transition::Decelerate, world, obj);
+        obj.color = Color{0, 0, 0, 255};
+        return new Decelerate();
+    }
 
     if (action_type == ActionType::MoveUpRight) {
         obj.fsm->transition(Transition::Move, world, obj);

@@ -1,5 +1,6 @@
 #include "camera.h"
 
+#include "game_object.h"
 #include "graphics.h"
 #include "physics.h"
 
@@ -83,4 +84,16 @@ void Camera::calculate_visible_tiles() {
     Vec<int> center{static_cast<int>(physics.position.x), static_cast<int>(physics.position.y)};
     visible_max = center + num_tiles;
     visible_min = center - num_tiles;
+}
+
+void Camera::render(const Vec<float> &position, const Sprite &sprite) const {
+    Vec<float> pixel = world_to_screen(position);
+    pixel.y += tilesize/2;
+    graphics.draw_sprite(pixel, sprite);
+}
+
+void Camera::render(const GameObject &obj) const {
+    // Debug Box
+    // render(obj.physics.position, obj.color);
+    render(obj.physics.position, obj.sprite);
 }
