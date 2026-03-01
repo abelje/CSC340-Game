@@ -3,10 +3,6 @@
 #include "game_object.h"
 #include "world.h"
 
-void Jump::perform(World&, GameObject& obj) {
-    obj.physics.velocity.y = obj.physics.jump_velocity;
-}
-
 void MoveRight::perform(World&, GameObject& obj) {
     obj.physics.acceleration.x = obj.physics.walk_acceleration;
 }
@@ -44,9 +40,5 @@ void MoveDownRight::perform(World&, GameObject& obj) {
 }
 
 void Sprint::perform(World&, GameObject& obj) {
-    obj.physics.walk_acceleration *= 2;
-}
-
-void Decelerate::perform(World&, GameObject& obj) {
-    obj.physics.walk_acceleration = 30.0f;
+    obj.physics.walk_acceleration *= 2.0f;
 }

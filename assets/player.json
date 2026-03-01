@@ -1,6 +1,6 @@
 {
   "idle" : {
-    "filename" : "Top_Down_Adventure_Pack_v.1.0/Char_Sprites/char_spritesheet.png",
+    "filename" : "char_spritesheet.png",
     "location" : [0, 0],
     "size" : [32, 32],
     "scale" : 2

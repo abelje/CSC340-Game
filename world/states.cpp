@@ -25,10 +25,6 @@ void Standing::on_enter(World&, GameObject& obj) {
 }
 
 Action *Standing::input(World& world, GameObject& obj, ActionType action_type) {
-    if (action_type == ActionType::Jump) {
-        obj.fsm->transition(Transition::Jump, world, obj);
-        return new Jump();
-    }
     if (action_type == ActionType::Sprint) {
         obj.fsm->transition(Transition::Sprint, world, obj);
         return new Sprint();
@@ -69,7 +65,8 @@ Action* Running::input(World& world, GameObject& obj, ActionType action_type) {
         obj.fsm->transition(Transition::Sprint, world, obj);
         return new Sprint();
     }
-    // Be able to run different directions while running?
+
+    // Diagonal Directions
     if (action_type == ActionType::MoveUpRight) {
         obj.fsm->transition(Transition::Move, world, obj);
         return new MoveUpRight();
@@ -85,10 +82,6 @@ Action* Running::input(World& world, GameObject& obj, ActionType action_type) {
     if (action_type == ActionType::MoveDownRight) {
         obj.fsm->transition(Transition::Move, world, obj);
         return new MoveDownRight();
-    }
-    if (action_type == ActionType::Jump) {
-        obj.fsm->transition(Transition::Jump, world, obj);
-        return new Jump();
     }
     return nullptr;
 }
@@ -102,10 +95,12 @@ void Sprinting::on_enter(World&, GameObject& obj) {
 }
 
 Action *Sprinting::input(World& world, GameObject& obj, ActionType action_type) {
+    // Stop (by moving opposite directions at the same time)
     if (action_type == ActionType::None) {
         obj.fsm->transition(Transition::Stop, world, obj);
     }
 
+    // Move Diagonal Directions while Sprinting
     if (action_type == ActionType::MoveUpRight) {
         obj.fsm->transition(Transition::Move, world, obj);
         return new MoveUpRight();
@@ -123,6 +118,7 @@ Action *Sprinting::input(World& world, GameObject& obj, ActionType action_type) 
         return new MoveDownRight();
     }
 
+    // Allow directional actions to sprint in each direction
     if (action_type == ActionType::MoveRight) {
         obj.fsm->transition(Transition::Move, world, obj);
         return new MoveRight();
