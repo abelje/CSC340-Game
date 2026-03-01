@@ -5,6 +5,11 @@
 #include "physics.h"
 #include <iostream>
 
+#include "action.h"
+#include "fsm.h"
+#include "states.h"
+#include "keyboard_input.h"
+
 World::World(int width, int height)
     : tilemap(width, height) {}
 
@@ -23,7 +28,25 @@ bool World::collides(const Vec<float>& position) const {
 }
 
 GameObject *World::create_player(World& world) {
-    player = std::make_unique<GameObject>(Vec<float>{10, 5}, Vec<int>{1,1}, world);
+    // Create FSM
+    Transitions transitions = {
+        {{StateType::Standing, Transition::Move}, StateType::Running},
+        {{StateType::Running, Transition::Stop}, StateType::Standing},
+        {{StateType::Standing, Transition::Sprint}, StateType::Sprinting},
+        {{StateType::Running, Transition::Sprint}, StateType::Sprinting},
+        {{StateType::Sprinting, Transition::Stop}, StateType::Standing}
+    };
+    States states = {
+        {StateType::Standing, new Standing()},
+        {StateType::Running, new Running()},
+        {StateType::Sprinting, new Sprinting()}
+    };
+    FSM* fsm = new FSM{transitions, states, StateType::Standing};
+
+    // player input
+    KeyboardInput* input = new KeyboardInput();
+
+    player = std::make_unique<GameObject>(Vec<float>{10, 5}, Vec<int>{1,1}, world, fsm, input, Color{255, 0, 0, 255});
     return player.get();
 }
 
@@ -36,7 +59,7 @@ void World::update(float dt) {
     velocity += 0.5f * acceleration * dt;
     position += velocity * dt;
     velocity += 0.5f * acceleration * dt;
-    velocity.x *= player->physics.damping;
+    velocity *= {player->physics.damping, player->physics.damping};
 
     // No infinite speed
     velocity.x = std::clamp(velocity.x, -player->physics.terminal_velocity, player->physics.terminal_velocity);
@@ -60,81 +83,73 @@ void World::update(float dt) {
 }
 
 void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velocity) {
-    // test for collisions on the bottom or top first
-    float right_x = position.x + size.x;
-    float up_y   = position.y + size.y;
-
-    if (collides(position) && collides({right_x, position.y})) { // bottom
-        position.y = static_cast<float>(ceil(position.y));
+    // test sides first. if both collide move backward
+    // bottom side
+    if (collides(position) && collides({position.x + size.x, position.y})) {
+        position.y = std::ceil(position.y);
         velocity.y = 0;
     }
-    else if (collides({position.x, up_y}) && collides({right_x, up_y})) {
-        position.y = std::floor(up_y) - size.y;
+    // top side
+    else if (collides({position.x, position.y + size.y}) && collides({position.x + size.x, position.y + size.y})) {
+        position.y = std::floor(position.y);
         velocity.y = 0;
     }
-    // then test for collisions on the left and right sides
-    if (collides(position) && collides({position.x, up_y})) {
-        // left side
-        position.x = ceil(position.x);
+    // left side
+    if (collides(position) && collides({position.x, position.y + size.y})) {
+        position.x = std::ceil(position.x);
         velocity.x = 0;
     }
-    else if (collides({right_x, position.y}) && collides({right_x, up_y})) {
-        // right side
-        position.x = floor(right_x) - size.x;
+    // right side
+    else if (collides({position.x + size.x, position.y}) && collides({position.x + size.x, position.y + size.y})) {
+        position.x = std::floor(position.x);
         velocity.x = 0;
     }
-    // now test each corner
-
-    // exclude the bottom right so the combination of left and right doesn't stack with this
-    if (collides(position) && !collides({right_x, position.y})) {
-        // bottom left
-        double dx = ceil(position.x) - position.x;
-        double dy = ceil(position.y) - position.y;
+    // test corners next, move back in smaller axis
+    if (collides(position)) {
+        float dx = std::ceil(position.x) - position.x;
+        float dy = std::ceil(position.y) - position.y;
         if (dx > dy) {
-            position.y = ceil(position.y);
+            position.y = std::ceil(position.y);
             velocity.y = 0;
         }
         else {
-            position.x = ceil(position.x);
+            position.x = std::ceil(position.x);
             velocity.x = 0;
         }
     }
-    else if (collides({right_x, position.y}) && !collides(position)) {
-        // bottom right
-        double dx = right_x - floor(right_x);
-        double dy = ceil(position.y) - position.y;
+    else if (collides({position.x, position.y + size.y})) {
+        float dx = std::ceil(position.x) - position.x;
+        float dy = position.y - std::floor(position.y);
         if (dx > dy) {
-            position.y = ceil(position.y);
+            position.y = std::floor(position.y);
             velocity.y = 0;
         }
         else {
-            position.x = floor(position.x);
+            position.x = std::ceil(position.x);
             velocity.x = 0;
         }
     }
-    if (collides({right_x, up_y}) && !collides({position.x, up_y})) {
-        // top right
-        double dx = right_x - floor(right_x);
-        double dy = up_y - floor(up_y);
+    else if (collides({position.x + size.x, position.y})) {
+        float dx = position.x - std::floor(position.x);
+        float dy = std::ceil(position.y) - position.y;
         if (dx > dy) {
-            position.y = floor(up_y) - size.y;
+            position.y = std::ceil(position.y);
             velocity.y = 0;
         }
         else {
-            position.x = floor(right_x) - size.x;
+            position.x = std::floor(position.x);
             velocity.x = 0;
         }
     }
-    else if (collides({position.x, up_y}) && !collides({right_x, up_y})) {
-        // top left
-        double dx = ceil(position.x) - position.x;
-        double dy = up_y - floor(up_y);
+    else if (collides({position.x + size.x, position.y + size.y})) {
+        float dx = position.x - std::floor(position.x);
+        float dy = position.y - std::floor(position.y);
         if (dx > dy) {
-            position.y = floor(up_y) - size.y;
+            position.y = std::floor(position.y);
             velocity.y = 0;
         }
         else {
-            position.x = ceil(right_x) - size.x;
+            position.x = std::floor(position.x);
             velocity.x = 0;
         }
     }

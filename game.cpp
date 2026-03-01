@@ -1,5 +1,8 @@
 #include "game.h"
 
+#include "asset_manager.h"
+#include "input.h"
+
 Game::Game(std::string title, int width, int height)
     : graphics{title, width, height}, world{31, 11}, dt{1.0/60.0}, camera{graphics, 64}, lag{0.0}, performance_frequency{SDL_GetPerformanceFrequency()}, prev_counter(SDL_GetPerformanceCounter()){
 
@@ -12,14 +15,23 @@ Game::Game(std::string title, int width, int height)
 
     // platforms
     world.add_platform(3, 7, 4, 1);
-    world.add_platform(13, 4, 6, 1);
+    world.add_platform(13, 1, 6, 1);
+
+    world.add_platform(7, 8, 1, 1);
+    world.add_platform(12, 3, 1, 1);
+
 
     player = world.create_player(world);
+    player->sprite = AssetManager::get_game_object_sprite("player", graphics);
     camera.set_location(player->physics.position);
 }
 
+void Game::handle_event(SDL_Event *event) {
+    player->input->collect_discrete_event(event);
+}
+
 void Game::input() {
-    player->input(world);
+    player->input->get_input();
     camera.handle_input();
 }
 
@@ -28,6 +40,8 @@ void Game::update() {
     lag += (now - prev_counter) / (float) performance_frequency;
     prev_counter = now;
     while (lag >= dt) {
+        player->input->handle_input(world, *player);
+        player->update(world, dt);
         world.update(dt);
         //put camera slightly ahead of player
         float L = length(player->physics.velocity);
@@ -45,8 +59,7 @@ void Game::render() {
     camera.render(world.tilemap);
 
     // draw player
-    auto [player_position, color] = player->get_sprite();
-    camera.render(player_position, color);
+    camera.render(*player);
 
     // update
     graphics.update();
