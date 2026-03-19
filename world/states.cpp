@@ -17,7 +17,7 @@ bool on_platform(World& world, GameObject& obj) {
 
 void Standing::on_enter(World&, GameObject& obj) {
     obj.color = {255, 0, 0, 255};
-
+    obj.set_sprite("idle_" + obj.last_direction);
     // Stop acceleration so damping will stop you
     obj.physics.acceleration.x = 0;
     obj.physics.acceleration.y = 0;
@@ -31,18 +31,26 @@ Action *Standing::input(World& world, GameObject& obj, ActionType action_type) {
     }
     if (action_type == ActionType::MoveRight) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "right";
+        obj.set_sprite("walk_right");
         return new MoveRight();
     }
     if (action_type == ActionType::MoveLeft) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "left";
+        obj.set_sprite("walk_right");
         return new MoveLeft();
     }
     if (action_type == ActionType::MoveUp) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "up";
+        obj.set_sprite("walk_up");
         return new MoveUp();
     }
     if (action_type == ActionType::MoveDown) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "down";
+        obj.set_sprite("walk_down");
         return new MoveDown();
     }
 
@@ -59,6 +67,7 @@ void Running::on_enter(World&, GameObject& obj) {
 
 Action* Running::input(World& world, GameObject& obj, ActionType action_type) {
     if (action_type == ActionType::None) {
+        obj.set_sprite("idle_" + obj.last_direction);
         obj.fsm->transition(Transition::Stop, world, obj);
     }
     if (action_type == ActionType::Sprint) {
@@ -69,18 +78,26 @@ Action* Running::input(World& world, GameObject& obj, ActionType action_type) {
     // Diagonal Directions
     if (action_type == ActionType::MoveUpRight) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "right";
+        obj.set_sprite("walk_right");
         return new MoveUpRight();
     }
     if (action_type == ActionType::MoveUpLeft) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "left";
+        obj.set_sprite("walk_right");
         return new MoveUpLeft();
     }
     if (action_type == ActionType::MoveDownLeft) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "left";
+        obj.set_sprite("walk_right");
         return new MoveDownLeft();
     }
     if (action_type == ActionType::MoveDownRight) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "right";
+        obj.set_sprite("walk_right");
         return new MoveDownRight();
     }
     return nullptr;
@@ -103,36 +120,44 @@ Action *Sprinting::input(World& world, GameObject& obj, ActionType action_type) 
     // Move Diagonal Directions while Sprinting
     if (action_type == ActionType::MoveUpRight) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "right";
         return new MoveUpRight();
     }
     if (action_type == ActionType::MoveUpLeft) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "left";
         return new MoveUpLeft();
     }
     if (action_type == ActionType::MoveDownLeft) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "left";
         return new MoveDownLeft();
     }
     if (action_type == ActionType::MoveDownRight) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "right";
         return new MoveDownRight();
     }
 
     // Allow directional actions to sprint in each direction
     if (action_type == ActionType::MoveRight) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "right";
         return new MoveRight();
     }
     if (action_type == ActionType::MoveLeft) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "left";
         return new MoveLeft();
     }
     if (action_type == ActionType::MoveUp) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "up";
         return new MoveUp();
     }
     if (action_type == ActionType::MoveDown) {
         obj.fsm->transition(Transition::Move, world, obj);
+        obj.last_direction = "down";
         return new MoveDown();
     }
 
