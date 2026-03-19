@@ -1,8 +1,78 @@
 {
-  "idle" : {
-    "filename" : "char_spritesheet.png",
-    "location" : [18, 16],
-    "size" : [13, 16],
-    "scale" : 4
+  "sprites": [
+    {
+      "name" : "idle_down",
+      "filename" : "char_spritesheet.png",
+      "location" : [128, 16],
+      "size" : [16, 16],
+      "scale" : 4,
+      "number_of_frames" : 6,
+      "dt_per_frame" : 0.1
+    },
+    {
+      "name" : "idle_left",
+      "filename" : "char_spritesheet.png",
+      "location" : [128, 32],
+      "size" : [16, 16],
+      "scale" : 4,
+      "number_of_frames" : 6,
+      "dt_per_frame" : 0.1
+    },
+    {
+      "name" : "idle_right",
+      "filename" : "char_spritesheet.png",
+      "location" : [128, 48],
+      "size" : [16, 16],
+      "scale" : 4,
+      "number_of_frames" : 6,
+      "dt_per_frame" : 0.1
+    },
+    {
+      "name" : "idle_up",
+      "filename" : "char_spritesheet.png",
+      "location" : [128, 64],
+      "size" : [16, 16],
+      "scale" : 4,
+      "number_of_frames" : 6,
+      "dt_per_frame" : 0.1
+    },
+    {
+      "name" : "walk_down",
+      "filename" : "char_spritesheet.png",
+      "location" : [16, 16],
+      "size" : [16, 16],
+      "scale" : 4,
+      "number_of_frames" : 6,
+      "dt_per_frame" : 0.1
+    },
+    {
+      "name" : "walk_right",
+      "filename": "char_spritesheet.png",
+      "location": [16, 48],
+      "size" : [16, 16],
+      "scale": 4,
+      "number_of_frames": 6,
+      "dt_per_frame": 0.1
+    },
+    {
+      "name" : "walk_up",
+      "filename": "char_spritesheet.png",
+      "location": [16, 64],
+      "size" : [16, 16],
+      "scale": 4,
+      "number_of_frames": 6,
+      "dt_per_frame": 0.1
+    }
+  ],
+  "physics" : {
+    "position" : [10, 5],
+    "velocity" : [0,0],
+    "acceleration": [0, -30],
+    "gravity" : -30.0,
+    "damping" : 0.9,
+    "walk_acceleration": 30.0,
+    "jump_velocity": 10.0,
+    "terminal_velocity" : 15.0
   }
+
 }
