@@ -11,6 +11,6 @@ public:
 private:
     double required_time;
     double elapsed;
-    Uint64 performace_frquency;
+    Uint64 performance_frequency;
     Uint64 prev_counter;
 };

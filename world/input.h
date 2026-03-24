@@ -2,6 +2,8 @@
 #include "action.h"
 #include "SDL3/SDL.h"
 
+class GameObject;
+
 class Input {
 public:
     virtual ~Input() = default;

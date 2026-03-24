@@ -1,22 +1,25 @@
 #include "world.h"
 #include <SDL3/SDL_rect.h>
 #include <algorithm>
+
+#include "game_object.h"
 #include "vec.h"
 #include "physics.h"
-#include <iostream>
-
-#include "action.h"
 #include "fsm.h"
 #include "states.h"
 #include "keyboard_input.h"
+#include "level.h"
+#include "audio.h"
 
-World::World(int width, int height)
-    : tilemap(width, height) {}
+World::World(const Level& level, Audio& audio)
+    : tilemap{level.width, level.height}, audio{&audio} {
+    load_level(level);
+}
 
 void World::add_platform(float x, float y, float width, float height) {
     for (int i = 0; i < height; ++i) {
         for (int j = 0; j < width; ++j) {
-            tilemap(x+j, y+i) = Tile::Platform;
+            tilemap(x+j, y+i) = Tile{};
         }
     }
 }
@@ -24,10 +27,11 @@ void World::add_platform(float x, float y, float width, float height) {
 bool World::collides(const Vec<float>& position) const {
     int x = std::floor(position.x);
     int y = std::floor(position.y);
-    return tilemap(x, y) == Tile::Platform;
+    return tilemap(x, y).blocking;
 }
 
-GameObject *World::create_player(World& world) {
+
+GameObject* World::create_player(Level& level) {
     // Create FSM
     Transitions transitions = {
         {{StateType::Standing, Transition::Move}, StateType::Running},
@@ -46,8 +50,8 @@ GameObject *World::create_player(World& world) {
     // player input
     KeyboardInput* input = new KeyboardInput();
 
-    player = std::make_unique<GameObject>(Vec<int>{1,1}, world, fsm, input, Color{255, 0, 0, 255});
-    return player.get();
+    player = new GameObject(Vec<float>{static_cast<float>(level.player_spawn_location.x), static_cast<float>(level.player_spawn_location.y)}, Vec<int>{1,1}, *this, fsm, input, Color{0, 0, 0});
+    return player;
 }
 
 void World::update(float dt) {
@@ -66,13 +70,12 @@ void World::update(float dt) {
     velocity.y = std::clamp(velocity.y, -player->physics.terminal_velocity, player->physics.terminal_velocity);
 
     // check for x collisions
-    // check for collisions in the world - x direction
+    // Check for collisions with the world - x direction
     Vec<float> future_position{position.x, player->physics.position.y};
     Vec<float> future_velocity{velocity.x, 0};
     move_to(future_position, player->size, future_velocity);
 
-    // y collisions
-    // now y direction after (maybe) moving in x
+    // y direction attempt after (maybe) moving in x
     future_velocity.y = velocity.y;
     future_position.y = position.y;
     move_to(future_position, player->size, future_velocity);
@@ -153,4 +156,11 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
             velocity.x = 0;
         }
     }
+}
+
+void World::load_level(const Level& level) {
+    for (const auto& [pos, tile_id] : level.tile_locations) {
+        tilemap(pos.x, pos.y) = level.tile_types.at(tile_id);
+    }
+    audio->load_sounds({});
 }
