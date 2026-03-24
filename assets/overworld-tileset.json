@@ -1,0 +1,574 @@
+{
+  "tiles": [
+    {
+      "sprite": {
+        "name": "border",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          235,
+          128
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "dirt",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          0,
+          48
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "stone",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          16,
+          48
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "grass_short",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          32,
+          48
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "grass_long",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          48,
+          48
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "flower_bush",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          64,
+          48
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "bush",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          80,
+          48
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "sign",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          112,
+          48
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "axe_stump",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          64,
+          64
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "unlit-campfire",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          80,
+          64
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "wood-fence",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          96,
+          64
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "pot",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          112,
+          64
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "upleft_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          128,
+          0
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "downright_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          128,
+          16
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "downleft_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          144,
+          16
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "upright_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          144,
+          0
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "up_end_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          160,
+          0
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "down_end_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          160,
+          16
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "right_end_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          176,
+          0
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "left_end_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          176,
+          16
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "right_junction_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          128,
+          32
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "left_junction_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          144,
+          32
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "up_junction_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          128,
+          48
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "down_junction_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          144,
+          48
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "vertical_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          160,
+          32
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "horizontal_path",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          176,
+          32
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "grass",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          96,
+          16
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "stone_wall_btm_left",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          96,
+          128
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "stone_wall_btm_center",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          112,
+          128
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "stone_wall_btm_right",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          144,
+          128
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    }
+  ]
+}

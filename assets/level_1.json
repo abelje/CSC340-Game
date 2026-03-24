@@ -1,0 +1,13 @@
+{
+  "height": 50,
+  "player_spawn_location": [
+    3,
+    6
+  ],
+  "tile_filenames": [
+    "overworld-tileset.json"
+  ],
+  "tiles": [
+  ],
+  "width": 50
+}
