@@ -1,25 +1,29 @@
 #pragma once
 
 #include <memory>
-#include <SDL3/SDL.h>
+
+#include "audio.h"
 #include "tilemap.h"
 #include "vec.h"
-#include "game_object.h"
 
-class Player;
+class GameObject;
+class Level;
+class Audio;
 
 class World {
 public:
-    World(int width, int height);
+    World(const Level& level, Audio& audio);
 
     void add_platform(float x, float y, float width, float height);
     bool collides(const Vec<float>& position) const;
-    GameObject* create_player(World& world);
-    void update(float dt);
+    GameObject* create_player(Level& level);
     void move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velocity);
+    void update(float dt);
+    void load_level(const Level& level);
 
     Tilemap tilemap;
 
 private:
-    std::unique_ptr<GameObject> player;
+    GameObject* player;
+    Audio* audio;
 };

@@ -1,17 +1,13 @@
 #include "game_object.h"
-
-#include <iostream>
-
-#include "physics.h"
 #include "world.h"
-#include "graphics.h"
-#include "action.h"
+#include "physics.h"
 #include "fsm.h"
+#include "action.h"
 #include "input.h"
 
-GameObject::GameObject(const Vec<int> &size, World &world, FSM* fsm, Input* input, Color color)
+GameObject::GameObject(const Vec<float>& position, const Vec<int>& size, World& world, FSM* fsm, Input* input, Color color)
     : size{size}, fsm{fsm}, input{input}, color{color} {
-
+    physics.position = Vec<float>{static_cast<float>(position.x), static_cast<float>(position.y)};
 }
 
 GameObject::~GameObject() {
@@ -30,7 +26,7 @@ void GameObject::update(World &world, double dt) {
 }
 
 std::pair<Vec<float>, Color> GameObject::get_sprite() const {
-    return {physics.position,color};
+    return {physics.position, color};
 }
 
 void GameObject::set_sprite(const std::string &next_sprite) {

@@ -10,21 +10,18 @@ Tilemap::Tilemap(int width, int height)
     if (height < 1) {
         throw std::runtime_error("height must be positive");
     }
-
-    // fill map with open tiles
-    std::fill(std::begin(tiles), std::end(tiles), Tile::Open);
 }
 
 void Tilemap::check_bounds(int x, int y) const {
     if (x >= width || x < 0 || y >= height || y < 0) {
         std::stringstream ss;
-        ss << "(" << x << "," << y << ") is not within bounds (";
+        ss << "(" << x << ", " << y << ") is not within bounds (";
         ss << width << ", " << height << ")";
         throw std::runtime_error(ss.str());
     }
 }
 
-const Tile &Tilemap::operator()(int x, int y) const {
+const Tile& Tilemap::operator()(int x, int y) const {
     check_bounds(x, y);
     return tiles.at(y * width + x);
 }
