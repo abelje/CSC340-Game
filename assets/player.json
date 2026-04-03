@@ -1,6 +1,15 @@
 {
   "sprites": [
     {
+      "name" : "idle",
+      "filename" : "char_spritesheet.png",
+      "location" : [128, 16],
+      "size" : [16, 16],
+      "scale" : 4,
+      "number_of_frames" : 6,
+      "dt_per_frame" : 0.1
+    },
+    {
       "name" : "idle_down",
       "filename" : "char_spritesheet.png",
       "location" : [128, 16],
@@ -65,7 +74,6 @@
     }
   ],
   "physics" : {
-    "position" : [10, 5],
     "velocity" : [0,0],
     "acceleration": [0, -30],
     "gravity" : -30.0,
@@ -73,6 +81,6 @@
     "walk_acceleration": 30.0,
     "jump_velocity": 10.0,
     "terminal_velocity" : 15.0
-  }
-
+  },
+  "size" : [1,1]
 }

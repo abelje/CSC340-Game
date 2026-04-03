@@ -683,6 +683,120 @@
       },
       "blocking": true,
       "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "stone_entrance_top_left",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          112,
+          144
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "stone_entrance_top_middle",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          128,
+          144
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "stone_entrance_top_right",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          144,
+          144
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "stone_entrance_bottom_left",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          112,
+          160
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
+    },
+    {
+      "sprite": {
+        "name": "stone_entrance_bottom_middle",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          128,
+          160
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": false,
+      "event_name": "next_level"
+    },
+    {
+      "sprite": {
+        "name": "stone_entrance_bottom_right",
+        "filename": "Overworld_Tileset.png",
+        "location": [
+          144,
+          160
+        ],
+        "size": [
+          16,
+          16
+        ],
+        "scale": 4,
+        "number_of_frames": 1,
+        "dt_per_frame": -1
+      },
+      "blocking": true,
+      "event_name": ""
     }
   ]
 }

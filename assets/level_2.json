@@ -3142,14 +3142,14 @@
                 29,
                 12
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:stone"
         },
         {
             "pos": [
                 29,
                 13
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:stone"
         },
         {
             "pos": [
@@ -3233,28 +3233,28 @@
                 30,
                 10
             ],
-            "tile": "overworld-tileset.json:stone"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
                 30,
                 11
             ],
-            "tile": "overworld-tileset.json:stone"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
                 30,
                 12
             ],
-            "tile": "overworld-tileset.json:stone_entrance_bottom_left"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
                 30,
                 13
             ],
-            "tile": "overworld-tileset.json:stone_entrance_top_left"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
@@ -3338,28 +3338,28 @@
                 31,
                 10
             ],
-            "tile": "overworld-tileset.json:stone"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
                 31,
                 11
             ],
-            "tile": "overworld-tileset.json:stone"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
                 31,
                 12
             ],
-            "tile": "overworld-tileset.json:stone_entrance_bottom_middle"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
                 31,
                 13
             ],
-            "tile": "overworld-tileset.json:stone_entrance_top_middle"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
@@ -3443,28 +3443,28 @@
                 32,
                 10
             ],
-            "tile": "overworld-tileset.json:stone"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
                 32,
                 11
             ],
-            "tile": "overworld-tileset.json:stone"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
                 32,
                 12
             ],
-            "tile": "overworld-tileset.json:stone_entrance_bottom_right"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
                 32,
                 13
             ],
-            "tile": "overworld-tileset.json:stone_entrance_top_right"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
@@ -3548,14 +3548,14 @@
                 33,
                 10
             ],
-            "tile": "overworld-tileset.json:stone"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
                 33,
                 11
             ],
-            "tile": "overworld-tileset.json:stone"
+            "tile": "overworld-tileset.json:flower_bush"
         },
         {
             "pos": [
