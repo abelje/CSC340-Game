@@ -42,66 +42,72 @@ ordered_json* find_tile_by_location(ordered_json& tiles, int row, int col);
 void edit_tile(std::string json_filename, int row, int col, std::string choice, std::string change);
 void remove_tile(std::string json_filename, int row, int col);
 
-int main() {
+int main(int argc, char* argv[]) {
   // ordered_json tileset_json = generate_tileset_json("Overworld_Tileset.png", 288, 208, 16, 4);
   // output_json(tileset_json, "output.json");
   // edit_tile("output.json", 0, 0, "name", "Hello World!");
-  remove_tile("output.json", 0, 0);
+  // remove_tile("output.json", 0, 0);
 }
 
-// void parse_args(int argc, char* argv[]) {
-//   if (argc >= 2) {
-//     std::string cmd = argv[1];
-//
-//     for (int i = 2; i < argc; ++i) {
-//       std::string arg = argv[i];
-//       std::string filename = "output.json";
-//       if (arg == "-o" && i + 1 < argc) {
-//         // Select output file
-//         filename = argv[i + 1];
-//       }
-//       if (cmd == "-g") {
-//         std::string img_filename = "";
-//         int img_width, img_height, tilesize, scale = -1;
-//         bool blocking = false;
-//         if (argv[i] == "--filename" && i + 1 < argc) {
-//           img_filename = argv[i + 1];
-//         }
-//         if (argv[i] == "--width" && i+1 < argc) {
-//           img_width = std::stoi(argv[i+1]);
-//         }
-//         if (argv[i] == "--height" && i+1 < argc) {
-//           img_height = std::stoi(argv[i+1]);
-//         }
-//         if (argv[i] == "--tilesize" && i+1 < argc) {
-//           tilesize = std::stoi(argv[i+1]);
-//         }
-//         if (argv[i] == "--scale" && i+1 < argc) {
-//           scale = std::stoi(argv[i+1]);
-//         }
-//         if (argv[i] == "--blocking" && i+1 < argc) {
-//           if (argv[i+1] == "true") {
-//             blocking = true;
-//           }
-//         }
-//         // ordered_json tileset = generate_tileset_json(filename, img_width, img_height, tilesize, scale, blocking);
-//         // output_json(tileset, filename);
-//       }
-//     }
-//     if (argv[1] == "-g") {
-//       // generate tileset
-//       // look for filename, img_width, img_height, tilesize, scale, OPTIONAL: blocking
-//     }
-//     if (argv[1] == "-e") {
-//       // edit tile
-//       // look for json_filename, row, col, choice, change
-//     }
-//     if (argv[1] == "-r") {
-//       // remove tile
-//       // look for json_filename, row, col
-//     }
-//   }
-// }
+void parse_args(int argc, char* argv[]) {
+  if (argc >= 2) {
+    std::string cmd = argv[1];
+
+    // variables
+    std::string filename = "output.json";
+
+    std::string img_filename = "";
+    int img_width = -1, img_height = -1, tilesize = -1, scale = -1;
+    bool blocking = false;
+
+    for (int i = 2; i < argc; ++i) {
+      std::string arg = argv[i];
+      if (arg == "-o" && i + 1 < argc) {
+        // Select output file
+        filename = argv[i + 1];
+      }
+      if (cmd == "-g") {
+        if (argv[i] == "--filename" && i + 1 < argc) {
+          img_filename = argv[i + 1];
+        }
+        if (argv[i] == "--width" && i+1 < argc) {
+          img_width = std::stoi(argv[i+1]);
+          std::cout << img_width << std::endl;
+        }
+        if (argv[i] == "--height" && i+1 < argc) {
+          img_height = std::stoi(argv[i+1]);
+        }
+        if (argv[i] == "--tilesize" && i+1 < argc) {
+          tilesize = std::stoi(argv[i+1]);
+        }
+        if (argv[i] == "--scale" && i+1 < argc) {
+          scale = std::stoi(argv[i+1]);
+        }
+        if (argv[i] == "--blocking" && i+1 < argc) {
+          if (argv[i+1] == "true") {
+            blocking = true;
+          }
+        }
+      }
+    }
+    if (cmd == "-g") {
+      ordered_json tileset = generate_tileset_json(img_filename, img_width, img_height, tilesize, scale, blocking);
+      output_json(tileset, filename);
+    }
+    // if (argv[1] == "-g") {
+    //   // generate tileset
+    //   // look for filename, img_width, img_height, tilesize, scale, OPTIONAL: blocking
+    // }
+    // if (argv[1] == "-e") {
+    //   // edit tile
+    //   // look for json_filename, row, col, choice, change
+    // }
+    // if (argv[1] == "-r") {
+    //   // remove tile
+    //   // look for json_filename, row, col
+    // }
+  }
+}
 
 ordered_json generate_tileset_json(std::string filename, int img_width, int img_height, int tilesize, int scale, bool blocking) {
   // Create json, adding tiles and an empty array
