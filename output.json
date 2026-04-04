@@ -15,7 +15,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -32,7 +34,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -49,7 +53,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -66,7 +72,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -83,7 +91,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -100,7 +110,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -117,7 +129,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -134,7 +148,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -151,7 +167,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -168,7 +186,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -185,7 +205,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -202,7 +224,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -219,7 +243,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -236,7 +262,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -253,7 +281,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -270,7 +300,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -287,7 +319,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -304,7 +338,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -321,7 +357,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -338,7 +376,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -355,7 +395,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -372,7 +414,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -389,7 +433,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -406,7 +452,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -423,7 +471,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -440,7 +490,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -457,7 +509,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -474,7 +528,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -491,7 +547,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -508,7 +566,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -525,7 +585,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -542,7 +604,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -559,7 +623,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -576,7 +642,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -593,7 +661,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -610,7 +680,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -627,7 +699,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -644,7 +718,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -661,7 +737,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -678,7 +756,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -695,7 +775,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -712,7 +794,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -729,7 +813,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -746,7 +832,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -763,7 +851,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -780,7 +870,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -797,7 +889,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -814,7 +908,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -831,7 +927,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -848,7 +946,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -865,7 +965,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -882,7 +984,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -899,7 +1003,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -916,7 +1022,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -933,7 +1041,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -950,7 +1060,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -967,7 +1079,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -984,7 +1098,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1001,7 +1117,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1018,7 +1136,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1035,7 +1155,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1052,7 +1174,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1069,7 +1193,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1086,7 +1212,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1103,7 +1231,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1120,7 +1250,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1137,7 +1269,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1154,7 +1288,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1171,7 +1307,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1188,7 +1326,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1205,7 +1345,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1222,7 +1364,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1239,7 +1383,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1256,7 +1402,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1273,7 +1421,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1290,7 +1440,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1307,7 +1459,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1324,7 +1478,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1341,7 +1497,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1358,7 +1516,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1375,7 +1535,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1392,7 +1554,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1409,7 +1573,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1426,7 +1592,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1443,7 +1611,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1460,7 +1630,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1477,7 +1649,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1494,7 +1668,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1511,7 +1687,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1528,7 +1706,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1545,7 +1725,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1562,7 +1744,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1579,7 +1763,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1596,7 +1782,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1613,7 +1801,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1630,7 +1820,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1647,7 +1839,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1664,7 +1858,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1681,7 +1877,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1698,7 +1896,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1715,7 +1915,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1732,7 +1934,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1749,7 +1953,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1766,7 +1972,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1783,7 +1991,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1800,7 +2010,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1817,7 +2029,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1834,7 +2048,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1851,7 +2067,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1868,7 +2086,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1885,7 +2105,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1902,7 +2124,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1919,7 +2143,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1936,7 +2162,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1953,7 +2181,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1970,7 +2200,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -1987,7 +2219,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2004,7 +2238,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2021,7 +2257,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2038,7 +2276,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2055,7 +2295,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2072,7 +2314,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2089,7 +2333,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2106,7 +2352,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2123,7 +2371,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2140,7 +2390,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2157,7 +2409,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2174,7 +2428,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2191,7 +2447,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2208,7 +2466,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2225,7 +2485,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2242,7 +2504,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2259,7 +2523,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2276,7 +2542,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2293,7 +2561,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2310,7 +2580,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2327,7 +2599,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2344,7 +2618,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2361,7 +2637,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2378,7 +2656,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2395,7 +2675,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2412,7 +2694,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2429,7 +2713,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2446,7 +2732,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2463,7 +2751,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2480,7 +2770,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2497,7 +2789,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2514,7 +2808,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2531,7 +2827,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2548,7 +2846,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2565,7 +2865,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2582,7 +2884,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2599,7 +2903,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2616,7 +2922,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2633,7 +2941,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2650,7 +2960,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2667,7 +2979,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2684,7 +2998,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2701,7 +3017,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2718,7 +3036,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2735,7 +3055,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2752,7 +3074,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2769,7 +3093,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2786,7 +3112,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2803,7 +3131,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2820,7 +3150,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2837,7 +3169,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2854,7 +3188,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2871,7 +3207,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2888,7 +3226,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2905,7 +3245,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2922,7 +3264,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2939,7 +3283,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2956,7 +3302,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2973,7 +3321,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -2990,7 +3340,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3007,7 +3359,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3024,7 +3378,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3041,7 +3397,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3058,7 +3416,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3075,7 +3435,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3092,7 +3454,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3109,7 +3473,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3126,7 +3492,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3143,7 +3511,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3160,7 +3530,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3177,7 +3549,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3194,7 +3568,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3211,7 +3587,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3228,7 +3606,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3245,7 +3625,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3262,7 +3644,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3279,7 +3663,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3296,7 +3682,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3313,7 +3701,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3330,7 +3720,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3347,7 +3739,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3364,7 +3758,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3381,7 +3777,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3398,7 +3796,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3415,7 +3815,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3432,7 +3834,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3449,7 +3853,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3466,7 +3872,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3483,7 +3891,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3500,7 +3910,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3517,7 +3929,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3534,7 +3948,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3551,7 +3967,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3568,7 +3986,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3585,7 +4005,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3602,7 +4024,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3619,7 +4043,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3636,7 +4062,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3653,7 +4081,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3670,7 +4100,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3687,7 +4119,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3704,7 +4138,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3721,7 +4157,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3738,7 +4176,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3755,7 +4195,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3772,7 +4214,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3789,7 +4233,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3806,7 +4252,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3823,7 +4271,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3840,7 +4290,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3857,7 +4309,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3874,7 +4328,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3891,7 +4347,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3908,7 +4366,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3925,7 +4385,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3942,7 +4404,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3959,7 +4423,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         },
         {
             "sprite": {
@@ -3976,7 +4442,9 @@
                 "scale": 4,
                 "number_of_frames": 1,
                 "dt_per_frame": -1
-            }
+            },
+            "blocking": false,
+            "event_name": ""
         }
     ]
 }
