@@ -2,10 +2,10 @@
 #include "asset_manager.h"
 
 const int TILESIZE = 64;
-const int VISIBLE_MAP_WIDTH = 14;
-const int VISIBLE_MAP_HEIGHT = 12;
-constexpr int COLUMNS = 5;
-constexpr float PADDING = 16.0f;
+const int VISIBLE_MAP_WIDTH = 18;
+const int VISIBLE_MAP_HEIGHT = 16;
+constexpr int COLUMNS = 7;
+constexpr float PADDING = 4.0f;
 
 LevelDesigner::LevelDesigner(const std::string &level_name, int width, int height)
     : graphics{"Level Designer", 1280, 720}, tilemap{width, height}, level{level_name},
