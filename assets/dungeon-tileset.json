@@ -16,7 +16,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -35,7 +35,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -54,7 +54,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -73,7 +73,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -92,7 +92,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -111,7 +111,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -130,7 +130,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -149,7 +149,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -206,7 +206,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -225,7 +225,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -263,7 +263,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -282,7 +282,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -301,7 +301,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -358,7 +358,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -377,7 +377,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -396,7 +396,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -415,7 +415,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -434,7 +434,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -453,7 +453,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -472,7 +472,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -510,7 +510,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -529,7 +529,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -548,7 +548,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -605,7 +605,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -624,7 +624,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -643,7 +643,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -662,7 +662,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -681,7 +681,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -700,7 +700,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -757,7 +757,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -776,7 +776,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -795,7 +795,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -814,7 +814,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -833,7 +833,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -852,7 +852,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -871,7 +871,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -890,7 +890,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -909,7 +909,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -928,7 +928,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -947,7 +947,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1004,7 +1004,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1023,7 +1023,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1042,7 +1042,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1061,7 +1061,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1080,7 +1080,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1099,7 +1099,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1118,7 +1118,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1137,7 +1137,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1156,7 +1156,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1194,7 +1194,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1251,7 +1251,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1270,7 +1270,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1289,7 +1289,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1308,7 +1308,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1327,7 +1327,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1346,7 +1346,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1365,7 +1365,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1384,7 +1384,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1441,7 +1441,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1498,7 +1498,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1517,7 +1517,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1536,7 +1536,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1555,7 +1555,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1574,7 +1574,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1745,7 +1745,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1765,7 +1765,7 @@
                 "dt_per_frame": -1
             },
             "blocking": false,
-            "event_name": ""
+            "event_name": "next_level"
         },
         {
             "sprite": {
@@ -1783,7 +1783,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1803,7 +1803,7 @@
                 "dt_per_frame": -1
             },
             "blocking": false,
-            "event_name": ""
+            "event_name": "next_level"
         },
         {
             "sprite": {
@@ -1992,7 +1992,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2011,7 +2011,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2030,7 +2030,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2049,7 +2049,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2239,7 +2239,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2258,7 +2258,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2277,7 +2277,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2296,7 +2296,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2410,7 +2410,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2429,7 +2429,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2486,7 +2486,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2505,7 +2505,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2524,7 +2524,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2543,7 +2543,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2600,7 +2600,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2619,7 +2619,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2638,7 +2638,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2657,7 +2657,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2676,7 +2676,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2695,7 +2695,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2733,7 +2733,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2790,7 +2790,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2809,7 +2809,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2828,7 +2828,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2866,7 +2866,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2885,7 +2885,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
