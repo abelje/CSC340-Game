@@ -60,3 +60,5 @@ target_link_libraries(game PUBLIC game_lib)
 
 add_executable(level_designer main_designer.cpp)
 target_link_libraries(level_designer PUBLIC game_lib)
+
+add_executable(create_json main_create_json.cpp)

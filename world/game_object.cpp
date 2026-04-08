@@ -5,9 +5,9 @@
 #include "action.h"
 #include "input.h"
 
-GameObject::GameObject(const Vec<float>& position, const Vec<int>& size, World& world, FSM* fsm, Input* input, Color color)
-    : size{size}, fsm{fsm}, input{input}, color{color} {
-    physics.position = Vec<float>{static_cast<float>(position.x), static_cast<float>(position.y)};
+GameObject::GameObject(std::string name, FSM* fsm, Input* input, Color color)
+    : obj_name{name}, fsm{fsm}, input{input}, color{color} {
+    // physics.position = Vec<float>{static_cast<float>(position.x), static_cast<float>(position.y)};
 }
 
 GameObject::~GameObject() {

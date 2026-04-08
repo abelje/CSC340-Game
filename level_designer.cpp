@@ -2,13 +2,13 @@
 #include "asset_manager.h"
 
 const int TILESIZE = 64;
-const int VISIBLE_MAP_WIDTH = 14;
-const int VISIBLE_MAP_HEIGHT = 12;
-constexpr int COLUMNS = 5;
-constexpr float PADDING = 16.0f;
+const int VISIBLE_MAP_WIDTH = 14*2;
+const int VISIBLE_MAP_HEIGHT = 12*2;
+constexpr int COLUMNS = 10;
+constexpr float PADDING = 8.0f;
 
 LevelDesigner::LevelDesigner(const std::string &level_name, int width, int height)
-    : graphics{"Level Designer", 1280, 720}, tilemap{width, height}, level{level_name},
+    : graphics{"Level Designer", 1280*2, 720*2}, tilemap{width, height}, level{level_name},
     dt{0.1}, performance_frequency{SDL_GetPerformanceFrequency()}, prev_counter{SDL_GetPerformanceCounter()}, lag{0.0},
     display_rect{0.0f, 0.0f, graphics.width*(2.0f/3.0f), static_cast<float>(graphics.height)},
     tiles_rect{graphics.width*(2.0f/3.0f), 0.0f, graphics.width*(1.0f/3.0f), static_cast<float>(graphics.height)}{
@@ -129,6 +129,12 @@ void LevelDesigner::render() {
 
                 graphics.draw_sprite({screen_x, screen_y}, tilemap(tilemap_x, tilemap_y).sprite);
                 SDL_FRect rect{screen_x, screen_y, static_cast<float>(TILESIZE), static_cast<float>(TILESIZE)};
+
+                // highlight event tiles
+                if (!tilemap(tilemap_x, tilemap_y).event_name.empty()) {
+                    graphics.draw(rect, {255, 0, 0, 100});
+                }
+
                 Color color = selected_tile == Vec<int>{tilemap_x, tilemap_y} ? Color{255, 255, 0, 255} : Color{0, 0, 0, 255};
                 graphics.draw(rect, color, false);
 
@@ -139,6 +145,11 @@ void LevelDesigner::render() {
                 // render invisible blocks as blue
                 if (tilemap(tilemap_x, tilemap_y).sprite.name == "border") {
                     graphics.draw(rect, {0, 0, 255, 100}, true);
+                }
+
+                // draw transparent yellow if there is an enemy
+                if (level.enemy_locations.contains({static_cast<float>(tilemap_x), static_cast<float>(tilemap_y)})) {
+                    graphics.draw(rect, {255, 222, 33, 100}, true);
                 }
             }
         }
@@ -194,4 +205,8 @@ void LevelDesigner::save() {
 
 void LevelDesigner::place_player() {
     level.player_spawn_location = selected_tile;
+}
+
+void LevelDesigner::place_enemy(std::string enemy_name) {
+    level.enemy_locations[{static_cast<float>(selected_tile.x), static_cast<float>(selected_tile.y)}] = enemy_name;
 }
