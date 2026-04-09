@@ -1,4 +1,13 @@
 {
+    "enemies": [
+        {
+            "enemy": "pinkslime",
+            "pos": [
+                15.0,
+                8.0
+            ]
+        }
+    ],
     "height": 15,
     "player_spawn_location": [
         11,

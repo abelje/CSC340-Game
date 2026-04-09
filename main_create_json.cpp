@@ -42,6 +42,9 @@ ordered_json* find_tile_by_location(ordered_json& tiles, int row, int col);
 void edit_tile(std::string json_filename, int row, int col, int tilesize, std::string choice, std::string change);
 void remove_tile(std::string json_filename, int row, int col, int tilesize);
 
+// enemy json
+ordered_json generate_enemy_json(std::string filename, std::vector<std::string> names, std::unordered_map<std::string, std::tuple<int, int>> locations, int tilesize, int scale, int number_of_frames, double dt_per_frame);
+
 int main() {
   std::cout << "Choose what command to use: \n'g'-> generate tileset json \n'e'-> edit tileset json\n'r'-> remove tile from tileset\n";
   std::string cmd;
@@ -68,6 +71,19 @@ int main() {
     std::cout << "Enter values: json_filename row col tilesize\n";
     std::cin >> json_filename >> row >> col >> tilesize;
     remove_tile(json_filename, row, col, tilesize);
+  }
+  if (cmd == "enemy") {
+    std::string filename = "spider_spritesheet.png";
+    int tilesize = 16, scale = 4, number_of_frames = 4;
+    double dt_per_frame = 0.1;
+    std::vector<std::string> names = {"idle", "walking", "death"};
+    std::unordered_map<std::string, std::tuple<int, int>> locations;
+    locations["idle"] = {0, 64};
+    locations["walking"] = {0, 32};
+    locations["death"] = {0, 0};
+
+    auto enemy_json = generate_enemy_json(filename, names, locations, tilesize, scale, number_of_frames, dt_per_frame);
+    output_json(enemy_json, "output.json");
   }
   // ordered_json tileset_json = generate_tileset_json("Overworld_Tileset.png", 288, 208, 16, 4);
   // output_json(tileset_json, "output.json");
@@ -170,4 +186,43 @@ void remove_tile(std::string json_filename, int row, int col, int tilesize) {
   }
   tile->clear();
   output_json(j, json_filename);
+}
+
+ordered_json generate_enemy_json(std::string filename, std::vector<std::string> names, std::unordered_map<std::string, std::tuple<int, int>> locations, int tilesize, int scale, int number_of_frames, double dt_per_frame) {
+  // Create json, adding tiles and an empty array
+  ordered_json j = {
+    {"sprites", ordered_json::array()},
+    {"physics",
+      {
+          {"velocity", ordered_json::array({0, 0})},
+          {"acceleration", ordered_json::array({0, 0})},
+          {"gravity", 0.0},
+          {"damping", 0.9},
+          {"walk_acceleration", 60.0},
+          {"jump_velocity", 0.0},
+          {"terminal_velocity", 0.0}
+        }
+      },
+    {"size", ordered_json::array({1, 1})}
+  };
+  int i = 0;
+  for (int k = 0; k < names.size(); ++k) {
+    // Add sprite
+    std::string name = names.at(k);
+    auto& [row, col] = locations[name];
+    j["sprites"] += {{"sprite",
+      {
+            {"name", name},
+            {"filename", filename},
+            {"location", {row, col}},
+            {"size", {tilesize, tilesize}},
+            {"scale", scale},
+            {"number_of_frames", number_of_frames},
+            {"dt_per_frame", dt_per_frame}
+      }
+    }};
+    ++i;
+  }
+  std::cout << i << " sprite animations generated!\n";
+  return j;
 }
