@@ -6,5 +6,6 @@
 
 void NextLevel::perform(World &world, GameObject &obj) {
     std::cout << "Next Level!!\n";
+    if (&obj != world.player) return;
     world.end_level = true;
 }

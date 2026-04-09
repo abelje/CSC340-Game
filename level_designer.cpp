@@ -4,7 +4,7 @@
 const int TILESIZE = 64;
 const int VISIBLE_MAP_WIDTH = 14*2;
 const int VISIBLE_MAP_HEIGHT = 12*2;
-constexpr int COLUMNS = 10;
+constexpr int COLUMNS = 12;
 constexpr float PADDING = 8.0f;
 
 LevelDesigner::LevelDesigner(const std::string &level_name, int width, int height)

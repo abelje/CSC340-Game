@@ -18,7 +18,7 @@ public:
 private:
     Graphics graphics;
     std::unique_ptr<GameObject> player;
-    World* world;
+    World* world = nullptr;
     Camera camera;
     Audio audio;
 

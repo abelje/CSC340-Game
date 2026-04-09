@@ -16,7 +16,7 @@ class Event;
 class World {
 public:
     World(const Level& level, Audio& audio, GameObject* player, Events events);
-
+    ~World();
     void add_platform(float x, float y, float width, float height);
     bool collides(const Vec<float>& position) const;
     void move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velocity);
@@ -29,6 +29,6 @@ public:
 
     GameObject* player;
     Audio* audio;
-    std::vector<GameObject> game_objects;
+    std::vector<GameObject*> game_objects;
     Events events;
 };

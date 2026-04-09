@@ -14,24 +14,11 @@ Game::Game(std::string title, int width, int height)
 prev_counter{SDL_GetPerformanceCounter()}, lag{0.0} {
     //load events
     get_events();
-    // load the first level
-    Level level{"level_1"};
-    AssetManager::get_level_details(graphics, level);
 
     // Give player its assets then put it in the correct state
     create_player();
     AssetManager::get_game_object_details("player", graphics, *player);
 
-    // create the world for the first level
-    // delete world
-    world = new World(level, audio, player.get(), events);
-
-    // use the spawn location's position
-    // player->physics.position = {static_cast<float>(level.player_spawn_location.x),
-    // static_cast<float>(level.player_spawn_location.y)};
-    // player->fsm->current_state->on_enter(*world, *player);
-    // camera.set_location(player->physics.position);
-    // audio.play_sounds("background", true);
     load_level();
 }
 
@@ -58,7 +45,6 @@ void Game::update() {
     prev_counter = now;
     while (lag >= dt) {
         player->input->handle_input(*world, *player);
-        player->update(*world, dt);
         world->update(dt);
         // put the camera slightly ahead of the player
         float L = length(player->physics.velocity);
@@ -84,7 +70,7 @@ void Game::render() {
 
     // enemies
     for (auto& obj: world->game_objects) {
-        camera.render(obj);
+        camera.render(*obj);
     }
 
     // update
@@ -106,7 +92,8 @@ void Game::load_level() {
 
     // assets for objs
     for (auto& obj : world->game_objects) {
-        AssetManager::get_game_object_details(obj.obj_name + "-enemy", graphics, obj);
+        if (obj == world->player) continue;
+        AssetManager::get_game_object_details(obj->obj_name + "-enemy", graphics, *obj, true);
     }
 
     player->physics.position = {static_cast<float>(level.player_spawn_location.x), static_cast<float>(level.player_spawn_location.y)};
