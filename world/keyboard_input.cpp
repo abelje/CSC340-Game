@@ -3,7 +3,7 @@
 #include "fsm.h"
 
 void KeyboardInput::get_input() {
-    if (next_action_type == ActionType::Sprint) return;
+    if (next_action_type == ActionType::Sprint || next_action_type == ActionType::AttackAll) return;
     const bool *key_states = SDL_GetKeyboardState(NULL);
 
     // check for both W,D -> UpRight
@@ -64,5 +64,8 @@ void KeyboardInput::collect_discrete_event(SDL_Event *event) {
         if (event->key.scancode == SDL_SCANCODE_LCTRL || event->key.scancode == SDL_SCANCODE_RCTRL) {
             next_action_type = ActionType::Sprint;
         }
+    }
+    if (event->key.scancode == SDL_SCANCODE_M) {
+        next_action_type = ActionType::AttackAll;
     }
 }

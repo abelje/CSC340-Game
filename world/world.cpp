@@ -79,6 +79,22 @@ void World::update(float dt) {
     if (collides_with.size() > 1) {
         std::cout << "Collided!\n";
     }
+    for (auto& obj : collides_with) {
+        if (obj == player) continue;
+        player->take_damage(obj->damage);
+    }
+
+    // check for dead objects and remove them
+    auto itr = std::remove_if(std::begin(game_objects), std::end(game_objects),
+            [](GameObject* obj) {return !obj->is_alive;}
+    );
+    game_objects.erase(itr, std::end(game_objects));
+
+    // check for player death
+    if (!player->is_alive) {
+        end_game = true;
+        return;
+    }
 }
 
 void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velocity) {

@@ -35,4 +35,5 @@ public:
 
     QuadTree quadtree;
     void build_quadtree();
+    bool end_game{false};
 };

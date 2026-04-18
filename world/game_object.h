@@ -25,6 +25,9 @@ public:
 
     AABB get_bounding_box();
 
+    void take_damage(int attack_damage);
+    bool flash_sprite() const;
+
     // GameObject data
     std::string obj_name;
     Physics physics;
@@ -41,4 +44,6 @@ public:
     int health;
     int max_health;
     int damage;
+    bool is_alive{true};
+    double iframe_time_remaining{0};
 };

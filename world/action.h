@@ -10,7 +10,8 @@ enum class ActionType {
     MoveUpRight,
     MoveDownLeft,
     MoveDownRight,
-    Sprint
+    Sprint,
+    AttackAll
 };
 
 class World;
@@ -23,37 +24,51 @@ public:
 };
 
 class MoveRight : public Action {
+public:
     void perform(World&, GameObject& obj) override;
 };
 
 class MoveLeft : public Action {
+public:
     void perform(World&, GameObject& obj) override;
 };
 
 class MoveUp : public Action {
+public:
     void perform(World&, GameObject& obj) override;
 };
 
 class MoveDown : public Action {
+public:
     void perform(World&, GameObject& obj) override;
 };
 
 class MoveUpLeft : public Action {
+public:
     void perform(World&, GameObject& obj) override;
 };
 
 class MoveUpRight : public Action {
+public:
     void perform(World&, GameObject& obj) override;
 };
 
 class MoveDownLeft : public Action {
+public:
     void perform(World&, GameObject& obj) override;
 };
 
 class MoveDownRight : public Action {
+public:
     void perform(World&, GameObject& obj) override;
 };
 
 class Sprint : public Action {
+public:
     void perform(World&, GameObject& obj) override;
+};
+
+class AttackAll : public Action {
+public:
+    void perform(World&, GameObject &obj) override;
 };

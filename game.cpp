@@ -12,7 +12,7 @@
 Game::Game(std::string title, int width, int height)
 :graphics{title, width, height}, camera{graphics, 64}, dt{1.0 / 60.0}, performance_frequency{SDL_GetPerformanceFrequency()},
 prev_counter{SDL_GetPerformanceCounter()}, lag{0.0} {
-    //load events
+    // load events
     get_events();
 
     // Give player its assets then put it in the correct state
@@ -30,13 +30,21 @@ Game::~Game() {
 }
 
 void Game::handle_event(SDL_Event* event) {
-    player->input->collect_discrete_event(event);
+    switch (mode) {
+    case GameMode::Playing:
+        player->input->collect_discrete_event(event);
+        break;
+    }
 }
 
 
 void Game::input() {
-    player->input->get_input();
-    camera.handle_input();
+    switch (mode) {
+    case GameMode::Playing:
+        player->input->get_input();
+        camera.handle_input();
+        break;
+    }
 }
 
 void Game::update() {
@@ -44,17 +52,22 @@ void Game::update() {
     lag += (now - prev_counter) / (float)performance_frequency;
     prev_counter = now;
     while (lag >= dt) {
-        player->input->handle_input(*world, *player);
-        world->update(dt);
-        // put the camera slightly ahead of the player
-        float L = length(player->physics.velocity);
-        Vec displacement = 8.0f * player->physics.velocity / (1.0f + L);
-        camera.update(player->physics.position + displacement, dt);
-        lag -= dt;
-        if (world->end_level) {
-            std::cout << "Bye!!!\n";
-            load_level();
+        switch (mode) {
+            case GameMode::Playing:
+
+                player->input->handle_input(*world, *player);
+                world->update(dt);
+                // put the camera slightly ahead of the player
+                float L = length(player->physics.velocity);
+                Vec displacement = 8.0f * player->physics.velocity / (1.0f + L);
+                camera.update(player->physics.position + displacement, dt);
+
+                if (world->end_level) {
+                    std::cout << "Bye!!!\n";
+                    load_level();
+                }
         }
+        lag -= dt;
     }
 }
 
@@ -109,12 +122,15 @@ void Game::create_player() {
         {{StateType::Running, Transition::Stop}, StateType::Standing},
         {{StateType::Standing, Transition::Sprint}, StateType::Sprinting},
         {{StateType::Running, Transition::Sprint}, StateType::Sprinting},
-        {{StateType::Sprinting, Transition::Stop}, StateType::Standing}
+        {{StateType::Sprinting, Transition::Stop}, StateType::Standing},
+        {{StateType::Standing, Transition::AttackAll}, StateType::AttackAllEnemies},
+        {{StateType::AttackAllEnemies, Transition::Stop}, StateType::Standing}
     };
     States states = {
         {StateType::Standing, new Standing()},
         {StateType::Running, new Running()},
-        {StateType::Sprinting, new Sprinting()}
+        {StateType::Sprinting, new Sprinting()},
+        {StateType::AttackAllEnemies, new AttackAllEnemies()}
     };
     FSM* fsm = new FSM{transitions, states, StateType::Standing};
 

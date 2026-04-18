@@ -6,6 +6,8 @@
 #include "audio.h"
 #include "events.h"
 
+enum class GameMode{Playing, GameOver};
+
 class Game {
 public:
     Game(std::string title, int width, int height);
@@ -28,7 +30,7 @@ private:
     Uint64 prev_counter;
     float lag;
 
-    //events
+    // events
     Events events;
     void get_events();
 
@@ -36,4 +38,7 @@ private:
     void create_player();
     int current_level{0};
     void load_level();
+
+    // game state
+    GameMode mode{GameMode::Playing};
 };

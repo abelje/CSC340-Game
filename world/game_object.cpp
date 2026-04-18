@@ -26,6 +26,7 @@ void GameObject::update(World &world, double dt) {
         sprites[sprite_name].update(0.15);
     }
     set_sprite(sprite_name);
+    if (iframe_time_remaining > 0.0) iframe_time_remaining -= dt;
 }
 
 std::pair<Vec<float>, Color> GameObject::get_sprite() const {
@@ -53,4 +54,22 @@ AABB GameObject::get_bounding_box() {
     Vec<float> center = {physics.position.x + half_size.x, physics.position.y + half_size.y};
     AABB bounding_box{center, half_size};
     return bounding_box;
+}
+
+void GameObject::take_damage(int attack_damage) {
+    if (iframe_time_remaining > 0) return;
+    health -= attack_damage;
+    iframe_time_remaining = 3;
+    if (health <= 0) {
+        is_alive = false;
+    }
+}
+
+bool GameObject::flash_sprite() const {
+    if (iframe_time_remaining <= 0.0) {
+        return false;
+    }
+
+    // alternate overlay on/off every 80 ms
+    return ((SDL_GetTicks() / 80) % 2) == 0;
 }
