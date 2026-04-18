@@ -9,6 +9,7 @@
 class World;
 class FSM;
 class Input;
+class AABB;
 
 using Sprites = std::map<std::string, AnimatedSprite>;
 
@@ -22,6 +23,8 @@ public:
     std::pair<Vec<float>, Color> get_sprite() const;
     void set_sprite(const std::string& next_sprite);
 
+    AABB get_bounding_box();
+
     // GameObject data
     std::string obj_name;
     Physics physics;
@@ -33,4 +36,9 @@ public:
     Sprite sprite;
     std::string sprite_name;
     std::string last_direction = "down";
+
+    // combat stuff
+    int health;
+    int max_health;
+    int damage;
 };

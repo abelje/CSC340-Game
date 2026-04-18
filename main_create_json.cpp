@@ -203,7 +203,10 @@ ordered_json generate_enemy_json(std::string filename, std::vector<std::string> 
           {"terminal_velocity", 0.0}
         }
       },
-    {"size", ordered_json::array({1, 1})}
+    {"size", ordered_json::array({1, 1})},
+    {"health", 10},
+    {"max_health", 10},
+    {"damage", 0}
   };
   int i = 0;
   for (int k = 0; k < names.size(); ++k) {

@@ -5,6 +5,7 @@
 
 #include "audio.h"
 #include "events.h"
+#include "quadtree.h"
 #include "tilemap.h"
 #include "vec.h"
 
@@ -31,4 +32,7 @@ public:
     Audio* audio;
     std::vector<GameObject*> game_objects;
     Events events;
+
+    QuadTree quadtree;
+    void build_quadtree();
 };
