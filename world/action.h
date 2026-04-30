@@ -88,7 +88,7 @@ public:
     void perform(World& world, GameObject& obj) override;
 };
 
-class AttackDown : public Action {
+class ShootArrow : public Action {
 public:
     void perform(World& world, GameObject& obj) override;
 };

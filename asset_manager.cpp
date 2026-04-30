@@ -50,6 +50,9 @@ void AssetManager::get_game_object_details(const std::string& name, Graphics& gr
     obj.physics = physics;
     obj.physics.position = pos;
 
+    // set default walk acceleration to be able to compare speeds in gameobj.update()
+    obj.physics.default_walk_acceleration = physics.walk_acceleration;
+
     // get the objects size
     obj.size = json.at("size").get<Vec<int>>();
 

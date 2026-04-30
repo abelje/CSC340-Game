@@ -1,5 +1,8 @@
 #include "action.h"
 
+#include <iostream>
+
+#include "fsm.h"
 #include "game_object.h"
 #include "projectile.h"
 #include "world.h"
@@ -44,8 +47,22 @@ void Sprint::perform(World&, GameObject& obj) {
     obj.physics.walk_acceleration *= 2.0f;
 }
 
-void AttackDown::perform(World& world, GameObject& obj) {
-    auto sword = dynamic_cast<Projectile*>(world.available_items["arrow"]());
-    sword->physics.position = obj.physics.position;
-    world.projectiles.push_back(sword);
+void ShootArrow::perform(World& world, GameObject& obj) {
+    auto arrow = dynamic_cast<Projectile*>(world.available_items["arrow"]());
+    arrow->physics.position = obj.physics.position;
+    arrow->last_direction = obj.last_direction;
+    std::cout << obj.last_direction << std::endl;
+    if (obj.last_direction == "left") {
+        arrow->physics.acceleration.x = arrow->physics.acceleration.x;
+        arrow->physics.velocity.x = -arrow->physics.velocity.x;
+    }
+    if (obj.last_direction == "up") {
+        arrow->physics.velocity.y = arrow->physics.velocity.x;
+        arrow->physics.velocity.x = 0;
+    }
+    if (obj.last_direction == "down") {
+        arrow->physics.velocity.y = -arrow->physics.velocity.x;
+        arrow->physics.velocity.x = 0;
+    }
+    world.projectiles.push_back(arrow);
 }

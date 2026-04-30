@@ -7,7 +7,7 @@
       "size" : [16, 16],
       "scale" : 4,
       "number_of_frames" : 6,
-      "dt_per_frame" : 1.0
+      "dt_per_frame" : 0.1
     },
     {
       "name" : "walking",
@@ -16,7 +16,7 @@
       "size" : [16, 16],
       "scale" : 4,
       "number_of_frames" : 6,
-      "dt_per_frame" : 1.0
+      "dt_per_frame" : 0.1
     },
     {
       "name" : "death",
@@ -25,7 +25,7 @@
       "size" : [16, 16],
       "scale" : 4,
       "number_of_frames" : 8,
-      "dt_per_frame" : 1.0
+      "dt_per_frame" : 0.1
     }
   ],
   "physics" : {
@@ -33,7 +33,7 @@
     "acceleration" : [0, 0],
     "gravity": 0.0,
     "damping": 0.9,
-    "walk_acceleration": 30.0,
+    "walk_acceleration": 60.0,
     "jump_velocity": 0.0,
     "terminal_velocity": 0.0
   },
