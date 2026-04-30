@@ -1,6 +1,7 @@
 #include "action.h"
 
 #include "game_object.h"
+#include "projectile.h"
 #include "world.h"
 
 void MoveRight::perform(World&, GameObject& obj) {
@@ -41,4 +42,10 @@ void MoveDownRight::perform(World&, GameObject& obj) {
 
 void Sprint::perform(World&, GameObject& obj) {
     obj.physics.walk_acceleration *= 2.0f;
+}
+
+void AttackDown::perform(World& world, GameObject& obj) {
+    auto sword = dynamic_cast<Projectile*>(world.available_items["arrow"]());
+    sword->physics.position = obj.physics.position;
+    world.projectiles.push_back(sword);
 }

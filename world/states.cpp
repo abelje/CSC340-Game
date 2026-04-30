@@ -1,6 +1,7 @@
 #include "states.h"
 #include "action.h"
 #include "game_object.h"
+#include "random.h"
 #include "world.h"
 
 // Helper Function
@@ -166,6 +167,26 @@ Action *Sprinting::input(World& world, GameObject& obj, ActionType action_type) 
 
     return nullptr;
 }
+
+// Patrolling
+void Patrolling::on_enter(World& world, GameObject& obj) {
+    // set cooldown to a random amount of time 3-10 seconds
+    elapsed = 0;
+    cooldown = randint(3, 10);
+    Running::on_enter(world, obj);
+}
+
+Action* Patrolling::input(World& world, GameObject& obj, ActionType action_type) {
+    if (elapsed >= cooldown) {
+        return Running::input(world, obj, ActionType::None);
+    }
+    return Running::input(world, obj, action_type);
+}
+
+void Patrolling::update(World&, GameObject&, double dt) {
+    elapsed += dt;
+}
+
 /////////////////
 // Attack all //
 ////////////////

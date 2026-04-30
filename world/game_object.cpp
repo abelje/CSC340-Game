@@ -6,10 +6,8 @@
 #include "input.h"
 #include "quadtree.h"
 
-GameObject::GameObject(std::string name, FSM* fsm, Input* input, Color color)
-    : obj_name{name}, fsm{fsm}, input{input}, color{color} {
-    // physics.position = Vec<float>{static_cast<float>(position.x), static_cast<float>(position.y)};
-}
+GameObject::GameObject(std::string name, FSM* fsm, Input* input, const Color& color)
+    : obj_name{name}, fsm{fsm}, input{input}, color{color} {}
 
 GameObject::~GameObject() {
     delete fsm;

@@ -12,6 +12,7 @@
 #include "level.h"
 #include "audio.h"
 #include "events.h"
+#include "projectile.h"
 
 World::World(const Level& level, Audio& audio, GameObject* player, Events events)
     : tilemap{level.width, level.height}, audio{&audio}, player{player}, events{events}, quadtree{AABB{{level.width/ 2.0f, level.height/2.0f}, {level.width/ 2.0f, level.height/2.0f}}} {
@@ -41,36 +42,13 @@ bool World::collides(const Vec<float>& position) const {
 
 void World::update(float dt) {
     for (auto& obj : game_objects) {
-        // currently only updating player
-        obj->update(*this, dt);
-        auto position = obj->physics.position;
-        auto velocity = obj->physics.velocity;
-        auto acceleration = obj->physics.acceleration;
-
-        velocity += 0.5f * acceleration * dt;
-        position += velocity * dt;
-        velocity += 0.5f * acceleration * dt;
-        velocity *= {obj->physics.damping, obj->physics.damping};
-
-        velocity.x = std::clamp(velocity.x, -obj->physics.terminal_velocity, obj->physics.terminal_velocity);
-        velocity.y = std::clamp(velocity.y, -obj->physics.terminal_velocity, obj->physics.terminal_velocity);
-
-        // check for x collisions
-        // Check for collisions with the world - x direction
-        Vec<float> future_position{position.x, obj->physics.position.y};
-        Vec<float> future_velocity{velocity.x, 0};
-        move_to(future_position, obj->size, future_velocity);
-
-        // y direction attempt after (maybe) moving in x
-        future_velocity.y = velocity.y;
-        future_position.y = position.y;
-        move_to(future_position, obj->size, future_velocity);
-
-        // update player
-        obj->physics.position = future_position;
-        obj->physics.velocity = future_velocity;
-
+        update_object(obj, dt);
         touch_tiles(*obj);
+    }
+
+    // update projectile
+    for (auto& projectile : projectiles) {
+        update_object(projectile, dt);
     }
 
     // check for collision with the player
@@ -84,17 +62,69 @@ void World::update(float dt) {
         player->take_damage(obj->damage);
     }
 
-    // check for dead objects and remove them
-    auto itr = std::remove_if(std::begin(game_objects), std::end(game_objects),
-            [](GameObject* obj) {return !obj->is_alive;}
+    //check for collision with projectile and enemy
+    for (auto& projectile : projectiles) {
+        std::vector<GameObject*> p_collides_with = quadtree.query_range(projectile->get_bounding_box());
+        for (auto& obj : p_collides_with) {
+            if (obj == player) continue;
+            obj->take_damage(projectile->damage);
+            projectile->elapsed += projectile->lifetime;
+        }
+    }
+
+    // std::partition puts objects that return TRUE at the beginning.
+    // So we flip the logic: Keep alive objects at the front.
+    auto itr = std::stable_partition(game_objects.begin(), game_objects.end(),
+        [](GameObject* obj) { return obj->is_alive; }
     );
-    game_objects.erase(itr, std::end(game_objects));
+
+    // Now [itr, end) contains the original pointers to the dead objects
+    std::for_each(itr, game_objects.end(), [](GameObject* p) { delete p; });
+    game_objects.erase(itr, game_objects.end());
+
+    // same for projectiles
+    auto p_itr = std::stable_partition(projectiles.begin(), projectiles.end(),
+        [](Projectile* projectile) { return projectile->elapsed <= projectile->lifetime; }   );
+
+    std::for_each(p_itr, projectiles.end(), [](Projectile* p) { delete p; });
+    projectiles.erase(p_itr, projectiles.end());
 
     // check for player death
     if (!player->is_alive) {
         end_game = true;
         return;
     }
+}
+
+void World::update_object(GameObject* obj, double dt) {
+    // currently only updating player
+    obj->update(*this, dt);
+    auto position = obj->physics.position;
+    auto velocity = obj->physics.velocity;
+    auto acceleration = obj->physics.acceleration;
+
+    velocity += 0.5f * acceleration * static_cast<float>(dt);
+    position += velocity * static_cast<float>(dt);
+    velocity += 0.5f * acceleration * static_cast<float>(dt);
+    velocity *= {obj->physics.damping, obj->physics.damping};
+
+    velocity.x = std::clamp(velocity.x, -obj->physics.terminal_velocity, obj->physics.terminal_velocity);
+    velocity.y = std::clamp(velocity.y, -obj->physics.terminal_velocity, obj->physics.terminal_velocity);
+
+    // check for x collisions
+    // Check for collisions with the world - x direction
+    Vec<float> future_position{position.x, obj->physics.position.y};
+    Vec<float> future_velocity{velocity.x, 0};
+    move_to(future_position, obj->size, future_velocity);
+
+    // y direction attempt after (maybe) moving in x
+    future_velocity.y = velocity.y;
+    future_position.y = position.y;
+    move_to(future_position, obj->size, future_velocity);
+
+    // update player
+    obj->physics.position = future_position;
+    obj->physics.velocity = future_velocity;
 }
 
 void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velocity) {

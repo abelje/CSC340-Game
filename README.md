@@ -6,5 +6,7 @@ the Legend of Zelda.
 Top Down Adventure Pack can be found on [https://o-lobster.itch.io](https://o-lobster.itch.io).
 All elements are created by o_lobster.
 
+Arrows Pack can be found on [https://kenam0.itch.io/arrows-pack](https://kenam0.itch.io/arrows-pack) by kenam0.
+
 Pixel Quest music can be found on [https://pixabay.com/music/adventure-pixel-quest-364092/](https://pixabay.com/music/adventure-pixel-quest-364092/)
 by user nakaradaalexander.

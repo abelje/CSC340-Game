@@ -2,6 +2,7 @@
 
 #include <iostream>
 
+#include "ai_input.h"
 #include "asset_manager.h"
 #include "fsm.h"
 #include "input.h"
@@ -19,6 +20,7 @@ prev_counter{SDL_GetPerformanceCounter()}, lag{0.0} {
     create_player();
     AssetManager::get_game_object_details("player", graphics, *player);
 
+    // load first level
     load_level();
 }
 
@@ -31,19 +33,22 @@ Game::~Game() {
 
 void Game::handle_event(SDL_Event* event) {
     switch (mode) {
-    case GameMode::Playing:
-        player->input->collect_discrete_event(event);
-        break;
+        case GameMode::Playing:
+            auto action = player->input->collect_discrete_event(event);
+            if (action) {
+                action->perform(*world, *player);
+            }
+            break;
     }
 }
 
 
 void Game::input() {
     switch (mode) {
-    case GameMode::Playing:
-        player->input->get_input();
-        camera.handle_input();
-        break;
+        case GameMode::Playing:
+            player->input->get_input();
+            camera.handle_input();
+            break;
     }
 }
 
@@ -53,9 +58,11 @@ void Game::update() {
     prev_counter = now;
     while (lag >= dt) {
         switch (mode) {
-            case GameMode::Playing:
+        case GameMode::Playing:
+                for (auto obj : world->game_objects) {
+                    obj->input->handle_input(*world, *obj);
+                }
 
-                player->input->handle_input(*world, *player);
                 world->update(dt);
                 // put the camera slightly ahead of the player
                 float L = length(player->physics.velocity);
@@ -66,10 +73,16 @@ void Game::update() {
                     std::cout << "Bye!!!\n";
                     load_level();
                 }
+                // check for game over
+                if (world->end_game) {
+                    mode = GameMode::GameOver;
+                }
+                break;
         }
         lag -= dt;
     }
-}
+
+    }
 
 void Game::render() {
     // clear
@@ -84,6 +97,16 @@ void Game::render() {
     // enemies
     for (auto& obj: world->game_objects) {
         camera.render(*obj);
+    }
+
+    // projectiles
+    for (auto& projectile: world->projectiles) {
+        camera.render(*projectile);
+    }
+
+    // game end
+    if (mode == GameMode::GameOver) {
+        camera.render_game_over();
     }
 
     // update
@@ -103,9 +126,13 @@ void Game::load_level() {
     delete world;
     world = new World(level, audio, player.get(), events);
 
+    // get available items
+    AssetManager::get_available_items("items", graphics, *world);
+
     // assets for objs
     for (auto& obj : world->game_objects) {
         if (obj == world->player) continue;
+        update_enemy(*obj);
         AssetManager::get_game_object_details(obj->obj_name + "-enemy", graphics, *obj, true);
     }
 
@@ -138,4 +165,30 @@ void Game::create_player() {
     KeyboardInput* input = new KeyboardInput();
 
     player = std::make_unique<GameObject>("player", fsm, input, Color{0, 0, 0});
+}
+
+void Game::update_enemy(GameObject& obj) {
+    Transitions transitions;
+    States states;
+
+    if (obj.obj_name == "pinkslime" || obj.obj_name == "spider") {
+        transitions = {
+            {{StateType::Standing, Transition::Move}, StateType::Patrolling},
+            {{StateType::Patrolling, Transition::Stop}, StateType::Standing}
+        };
+        states = {
+            {StateType::Standing, new Standing()},
+            {StateType::Patrolling, new Patrolling()}
+        };
+    }
+    else {
+        // throw an error?
+    }
+
+    FSM* fsm = new FSM{transitions, states, StateType::Patrolling};
+    obj.fsm = fsm;
+
+    Input* input = new AiInput{};
+    input->next_action_type = ActionType::MoveRight;
+    obj.input = input;
 }

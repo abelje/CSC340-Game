@@ -7,7 +7,7 @@
       "size" : [16, 16],
       "scale" : 4,
       "number_of_frames" : 6,
-      "dt_per_frame" : 0.1
+      "dt_per_frame" : 1.0
     },
     {
       "name" : "idle_down",
@@ -16,7 +16,7 @@
       "size" : [16, 16],
       "scale" : 4,
       "number_of_frames" : 6,
-      "dt_per_frame" : 0.1
+      "dt_per_frame" : 1.0
     },
     {
       "name" : "idle_left",
@@ -25,7 +25,7 @@
       "size" : [16, 16],
       "scale" : 4,
       "number_of_frames" : 6,
-      "dt_per_frame" : 0.1
+      "dt_per_frame" : 1.0
     },
     {
       "name" : "idle_right",
@@ -34,7 +34,7 @@
       "size" : [16, 16],
       "scale" : 4,
       "number_of_frames" : 6,
-      "dt_per_frame" : 0.1
+      "dt_per_frame" : 1.0
     },
     {
       "name" : "idle_up",
@@ -43,7 +43,7 @@
       "size" : [16, 16],
       "scale" : 4,
       "number_of_frames" : 6,
-      "dt_per_frame" : 0.1
+      "dt_per_frame" : 1.0
     },
     {
       "name" : "walk_down",
@@ -52,7 +52,7 @@
       "size" : [16, 16],
       "scale" : 4,
       "number_of_frames" : 6,
-      "dt_per_frame" : 0.1
+      "dt_per_frame" : 1.0
     },
     {
       "name" : "walk_right",
@@ -61,7 +61,7 @@
       "size" : [16, 16],
       "scale": 4,
       "number_of_frames": 6,
-      "dt_per_frame": 0.1
+      "dt_per_frame": 1.0
     },
     {
       "name" : "walk_up",
@@ -70,13 +70,13 @@
       "size" : [16, 16],
       "scale": 4,
       "number_of_frames": 6,
-      "dt_per_frame": 0.1
+      "dt_per_frame": 1.0
     }
   ],
   "physics" : {
     "velocity" : [0,0],
-    "acceleration": [0, -30],
-    "gravity" : -30.0,
+    "acceleration": [0, 0],
+    "gravity" : 0.0,
     "damping" : 0.9,
     "walk_acceleration": 30.0,
     "jump_velocity": 10.0,

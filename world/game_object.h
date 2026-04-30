@@ -15,10 +15,10 @@ using Sprites = std::map<std::string, AnimatedSprite>;
 
 class GameObject {
 public:
-    GameObject(std::string name, FSM* fsm, Input* input, Color color);
+    GameObject(std::string name, FSM* fsm, Input* input, const Color& color={255, 0, 0, 255});
     ~GameObject();
 
-    void update(World& world, double dt);
+    virtual void update(World& world, double dt);
 
     std::pair<Vec<float>, Color> get_sprite() const;
     void set_sprite(const std::string& next_sprite);

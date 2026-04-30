@@ -5,6 +5,7 @@
 
 #include "audio.h"
 #include "events.h"
+#include "projectile.h"
 #include "quadtree.h"
 #include "tilemap.h"
 #include "vec.h"
@@ -22,6 +23,7 @@ public:
     bool collides(const Vec<float>& position) const;
     void move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velocity);
     void update(float dt);
+    void update_object(GameObject* obj, double dt);
     void load_level(const Level& level);
     void touch_tiles(GameObject& obj);
 
@@ -31,9 +33,13 @@ public:
     GameObject* player;
     Audio* audio;
     std::vector<GameObject*> game_objects;
+    std::vector<Projectile*> projectiles;
     Events events;
 
     QuadTree quadtree;
     void build_quadtree();
     bool end_game{false};
+
+    // items
+    std::map<std::string, std::function<GameObject*()>> available_items;
 };

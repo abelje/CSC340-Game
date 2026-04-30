@@ -27,3 +27,13 @@ public:
     double elapsed = 0;
     double cooldown = 2;
 };
+
+class Patrolling : public Running {
+public:
+    void on_enter(World&, GameObject&) override;
+    Action* input(World&, GameObject&, ActionType) override;
+    void update(World&, GameObject&, double dt) override;
+
+    double elapsed{0.0};
+    double cooldown{0.0};
+};
