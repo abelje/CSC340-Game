@@ -38,6 +38,9 @@
     "tile_filenames": [
         "overworld-tileset.json"
     ],
+    "decortiles": [
+
+    ],
     "tiles": [
         {
             "pos": [

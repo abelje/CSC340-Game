@@ -28,6 +28,7 @@ public:
     void touch_tiles(GameObject& obj);
 
     Tilemap tilemap;
+    Tilemap decormap;
     bool end_level{false};
 
     GameObject* player;

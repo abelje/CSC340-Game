@@ -5,6 +5,8 @@
 #include "level.h"
 #include "vec.h"
 
+enum mode{Base, Decor}; // change mode with button click? Add mode to LevelDesigner contructor?
+
 class LevelDesigner {
 public:
     LevelDesigner(const std::string& level_name, int width, int height);

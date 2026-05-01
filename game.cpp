@@ -91,6 +91,9 @@ void Game::render() {
     // draw the world
     camera.render(world->tilemap);
 
+    // draw decorations
+    camera.render(world->decormap);
+
     // draw the player
     camera.render(*player);
 

@@ -15,7 +15,7 @@
 #include "projectile.h"
 
 World::World(const Level& level, Audio& audio, GameObject* player, Events events)
-    : tilemap{level.width, level.height}, audio{&audio}, player{player}, events{events}, quadtree{AABB{{level.width/ 2.0f, level.height/2.0f}, {level.width/ 2.0f, level.height/2.0f}}} {
+    : tilemap{level.width, level.height}, decormap{level.width, level.height}, audio{&audio}, player{player}, events{events}, quadtree{AABB{{level.width/ 2.0f, level.height/2.0f}, {level.width/ 2.0f, level.height/2.0f}}} {
     load_level(level);
 }
 
@@ -203,6 +203,9 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
 void World::load_level(const Level& level) {
     for (const auto& [pos, tile_id] : level.tile_locations) {
         tilemap(pos.x, pos.y) = level.tile_types.at(tile_id);
+    }
+    for (const auto& [pos, tile_id] : level.decor_tile_locations) {
+        decormap(pos.x, pos.y) = level.tile_types.at(tile_id);
     }
     audio->load_sounds(level.sounds);
 
