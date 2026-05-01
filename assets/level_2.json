@@ -4,6 +4,28 @@
         11,
         7
     ],
+    "sounds" : [
+        {
+            "name": "background",
+            "filename": "freesound_community-a_dungeon_ambience_loop.mp3",
+            "loop_forever": true
+        },
+        {
+            "name": "swing",
+            "filename": "musicholder-sword-sound.mp3",
+            "loop_forever": false
+        },
+        {
+            "name": "arrow",
+            "filename": "djartmusic-arrow-swish.mp3",
+            "loop_forever": false
+        },
+        {
+            "name": "sprint",
+            "filename": "freesounds123-running.mp3",
+            "loop_forever": false
+        }
+    ],
     "tile_filenames": [
         "dungeon-tileset.json"
     ],

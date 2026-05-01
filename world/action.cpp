@@ -66,4 +66,5 @@ void ShootArrow::perform(World& world, GameObject& obj) {
         arrow->physics.velocity.x = 0;
     }
     world.projectiles.push_back(arrow);
+    world.audio->play_sounds("arrow");
 }
