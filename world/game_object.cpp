@@ -20,6 +20,7 @@ void GameObject::update(World &world, double dt) {
     }
     sprites[sprite_name].update(dt);
     sprites[sprite_name].flip(physics.acceleration.x < 0);
+
     if (physics.walk_acceleration > physics.default_walk_acceleration) {
         sprites[sprite_name].update(0.15);
     }

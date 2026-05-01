@@ -99,7 +99,7 @@ void Camera::render(const GameObject &obj) const {
     if (grid_toggle.on) {
         render(obj.physics.position, obj.color);
     }
-    render(obj.physics.position, obj.sprite);
+    render(obj.physics.position, obj.sprite, obj.flash_sprite());
 }
 
 void Camera::render_game_over() {

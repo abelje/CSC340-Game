@@ -51,16 +51,17 @@ void ShootArrow::perform(World& world, GameObject& obj) {
     auto arrow = dynamic_cast<Projectile*>(world.available_items["arrow"]());
     arrow->physics.position = obj.physics.position;
     arrow->last_direction = obj.last_direction;
-    std::cout << obj.last_direction << std::endl;
     if (obj.last_direction == "left") {
-        arrow->physics.acceleration.x = arrow->physics.acceleration.x;
+        arrow->sprites[arrow->sprite.name].rotate(180);
         arrow->physics.velocity.x = -arrow->physics.velocity.x;
     }
     if (obj.last_direction == "up") {
+        arrow->sprites[arrow->sprite.name].rotate(270);
         arrow->physics.velocity.y = arrow->physics.velocity.x;
         arrow->physics.velocity.x = 0;
     }
     if (obj.last_direction == "down") {
+        arrow->sprites[arrow->sprite.name].rotate(90);
         arrow->physics.velocity.y = -arrow->physics.velocity.x;
         arrow->physics.velocity.x = 0;
     }
