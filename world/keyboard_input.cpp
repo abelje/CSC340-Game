@@ -46,6 +46,11 @@ void KeyboardInput::get_input() {
     else if (key_states[SDL_SCANCODE_D]) {
         next_action_type = ActionType::MoveRight;
     }
+
+    // // Swing
+    // else if (key_states[SDL_SCANCODE_J]) {
+    //     next_action_type = ActionType::Swing;
+    // }
 }
 
 void KeyboardInput::handle_input(World &world, GameObject &obj) {
