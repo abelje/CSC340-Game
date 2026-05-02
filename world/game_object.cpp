@@ -58,7 +58,7 @@ AABB GameObject::get_bounding_box() {
 void GameObject::take_damage(int attack_damage) {
     if (iframe_time_remaining > 0) return;
     health -= attack_damage;
-    iframe_time_remaining = 3;
+    iframe_time_remaining = 1;
     if (health <= 0) {
         is_alive = false;
     }

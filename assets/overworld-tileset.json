@@ -1612,7 +1612,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1840,7 +1840,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2087,7 +2087,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {

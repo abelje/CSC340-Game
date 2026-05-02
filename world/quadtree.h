@@ -25,10 +25,10 @@ public:
 
     void subdivide();
 
-    // how many elements an be stored
+    // how many elements can be stored
     static constexpr std::size_t NODE_CAPACITY = 4;
 
-    //boundary of this node
+    // boundary of this node
     AABB boundary;
 
     // objects in this node

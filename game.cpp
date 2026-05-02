@@ -186,6 +186,7 @@ void Game::update_enemy(GameObject& obj) {
     }
     else {
         // throw an error?
+        throw std::runtime_error("Unable to update enemy!");
     }
 
     FSM* fsm = new FSM{transitions, states, StateType::Patrolling};

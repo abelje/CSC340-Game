@@ -31,8 +31,8 @@ public:
     Tilemap decormap;
     bool end_level{false};
 
-    GameObject* player;
-    Audio* audio;
+    GameObject* player = nullptr;
+    Audio* audio = nullptr;
     std::vector<GameObject*> game_objects;
     std::vector<Projectile*> projectiles;
     Events events;

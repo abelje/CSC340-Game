@@ -71,42 +71,6 @@
       "scale": 4,
       "number_of_frames": 6,
       "dt_per_frame": 0.1
-    },
-    {
-      "name" : "swing_down",
-      "filename": "char_spritesheet.png",
-      "location": [0, 208],
-      "size": [48, 32],
-      "scale": 4,
-      "number_of_frames": 6,
-      "dt_per_frame": 0.1
-    },
-    {
-      "name" : "swing_up",
-      "filename": "char_spritesheet.png",
-      "location": [0, 256],
-      "size": [48, 32],
-      "scale": 4,
-      "number_of_frames": 6,
-      "dt_per_frame": 0.1
-    },
-    {
-      "name" : "swing_left",
-      "filename": "char_spritesheet.png",
-      "location": [0, 288],
-      "size": [48, 32],
-      "scale": 4,
-      "number_of_frames": 6,
-      "dt_per_frame": 0.1
-    },
-    {
-      "name" : "swing_right",
-      "filename": "char_spritesheet.png",
-      "location": [0, 368],
-      "size": [48, 32],
-      "scale": 4,
-      "number_of_frames": 6,
-      "dt_per_frame": 0.1
     }
   ],
   "physics" : {

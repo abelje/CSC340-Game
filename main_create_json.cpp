@@ -164,7 +164,7 @@ void edit_tile(std::string json_filename, int row, int col, int tilesize, std::s
   }
   if (choice == "blocking") {
     if (change == "true") {
-      (*tile)["sprite"]["blocking"] = true;
+      (*tile)["blocking"] = true;
     }
     if (change == "false") {
       (*tile)["blocking"] = false;

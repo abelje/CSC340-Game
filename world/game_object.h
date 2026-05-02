@@ -32,8 +32,8 @@ public:
     std::string obj_name;
     Physics physics;
     Vec<int> size;
-    FSM* fsm;
-    Input* input;
+    FSM* fsm = nullptr;
+    Input* input = nullptr;
     Color color;
     Sprites sprites;
     Sprite sprite;

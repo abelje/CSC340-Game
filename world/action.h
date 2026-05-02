@@ -73,21 +73,6 @@ public:
     void perform(World&, GameObject &obj) override;
 };
 
-class AttackRight : public Action {
-public:
-    void perform(World& world, GameObject& obj) override;
-};
-
-class AttackLeft : public Action {
-public:
-    void perform(World& world, GameObject& obj) override;
-};
-
-class AttackUp : public Action {
-public:
-    void perform(World& world, GameObject& obj) override;
-};
-
 class ShootArrow : public Action {
 public:
     void perform(World& world, GameObject& obj) override;
