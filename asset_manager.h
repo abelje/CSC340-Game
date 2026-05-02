@@ -35,8 +35,15 @@ inline void to_json(nlohmann::json& j, const Level& level) {
     j["player_spawn_location"] = level.player_spawn_location;
     j["sounds"] = level.sounds;
     j["tiles"] = nlohmann::json::array();
+    j["tiles_decor"] = nlohmann::json::array();
     for (const auto& [pos, tile] : level.tile_locations) {
         j["tiles"].push_back({
+        {"pos", pos},
+        {"tile", tile}
+        });
+    }
+    for (const auto& [pos, tile] : level.decor_tile_locations) {
+        j["tiles_decor"].push_back({
         {"pos", pos},
         {"tile", tile}
         });
@@ -58,6 +65,13 @@ inline void from_json(const nlohmann::json& j, Level& level) {
     j.at("player_spawn_location").get<Vec<int>>() : Vec<int>{-1, -1};
     if (j.contains("tiles")) {
         for (const auto& t : j.at("tiles")) {
+            Vec<int> pos = t.at("pos").get<Vec<int>>();
+            std::string tile_id = t.at("tile").get<std::string>();
+            level.tile_locations[pos] = tile_id;
+        }
+    }
+    if (j.contains("tiles_decor")) {
+        for (const auto& t : j.at("tiles_decor")) {
             Vec<int> pos = t.at("pos").get<Vec<int>>();
             std::string tile_id = t.at("tile").get<std::string>();
             level.tile_locations[pos] = tile_id;

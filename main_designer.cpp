@@ -9,8 +9,8 @@ SDL_AppResult SDL_AppInit(void **appstate, int, char**) {
         SDL_Log("Couldn't initialize SDL: %s", SDL_GetError());
         return SDL_APP_FAILURE;
     }
-
-    auto designer = new LevelDesigner("level_1", 37, 15);
+    Mode mode = Mode::Decor;
+    auto designer = new LevelDesigner("level_1", 37, 15, mode);
     *appstate = designer;
 
     return SDL_APP_CONTINUE;  /* carry on with the program! */

@@ -4,18 +4,16 @@
 const int TILESIZE = 64;
 const int VISIBLE_MAP_WIDTH = 14*2;
 const int VISIBLE_MAP_HEIGHT = 12*2;
-constexpr int COLUMNS = 12;
+constexpr int COLUMNS = 14;
 constexpr float PADDING = 8.0f;
 
-LevelDesigner::LevelDesigner(const std::string &level_name, int width, int height)
-    : graphics{"Level Designer", 1280*2, 720*2}, tilemap{width, height}, level{level_name},
+LevelDesigner::LevelDesigner(const std::string &level_name, int width, int height, Mode mode)
+    : graphics{"Level Designer", 2000, 1200}, tilemap{width, height}, decormap{width, height}, level{level_name},
     dt{0.1}, performance_frequency{SDL_GetPerformanceFrequency()}, prev_counter{SDL_GetPerformanceCounter()}, lag{0.0},
-    display_rect{0.0f, 0.0f, graphics.width*(2.0f/3.0f), static_cast<float>(graphics.height)},
-    tiles_rect{graphics.width*(2.0f/3.0f), 0.0f, graphics.width*(1.0f/3.0f), static_cast<float>(graphics.height)}{
+    display_rect{0.0f, 0.0f, graphics.width*(2.0f/4.0f), static_cast<float>(graphics.height)},
+    tiles_rect{graphics.width*(2.0f/4.0f), 0.0f, graphics.width*(1.0f/2.0f), static_cast<float>(graphics.height)}, mode{mode}{
     update_title();
-
     AssetManager::get_level_details(graphics, level);
-
     // set up palette ids for tile selection
     for (auto& [id, tile] : level.tile_types) {
         palette_ids.push_back(id);
@@ -25,6 +23,12 @@ LevelDesigner::LevelDesigner(const std::string &level_name, int width, int heigh
     // update the tilemap
     for (const auto& [pos, tile_id] : level.tile_locations) {
         tilemap(pos.x, pos.y) = level.tile_types[tile_id];
+    }
+    // case for decor
+    if (mode == Mode::Decor) {
+        for (const auto& [pos, tile_id] : level.decor_tile_locations) {
+            decormap(pos.x, pos.y) = level.tile_types[tile_id];
+        }
     }
 }
 
@@ -82,17 +86,24 @@ void LevelDesigner::input() {
     const bool* keys = SDL_GetKeyboardState(nullptr);
 
     if ((keys[SDL_SCANCODE_DELETE] || keys[SDL_SCANCODE_BACKSPACE]) && selected_tile.x >= 0 && selected_tile.y >= 0) {
-        tilemap(selected_tile.x, selected_tile.y) = Tile{};
+        if (mode == Mode::Base) {
+            tilemap(selected_tile.x, selected_tile.y) = Tile{};
+        }
+        if (mode == Mode::Decor) {
+            decormap(selected_tile.x, selected_tile.y) = Tile{};
+        }
     }
     // RGUI & LGUI for CMD on mac
     if (keys[SDL_SCANCODE_S] && (keys[SDL_SCANCODE_LCTRL] || keys[SDL_SCANCODE_RCTRL] || keys[SDL_SCANCODE_LGUI] || keys[SDL_SCANCODE_RGUI])) {
         save();
     }
-    if (keys[SDL_SCANCODE_P]) {
-        place_player();
-    }
-    if (keys[SDL_SCANCODE_1]) {
-        place_enemy("pinkslime");
+    if (mode == Mode::Base) {
+        if (keys[SDL_SCANCODE_P]) {
+            place_player();
+        }
+        if (keys[SDL_SCANCODE_1]) {
+            place_enemy("pinkslime");
+        }
     }
 
     // timer for scrolling
@@ -154,6 +165,19 @@ void LevelDesigner::render() {
                 if (level.enemy_locations.contains({static_cast<float>(tilemap_x), static_cast<float>(tilemap_y)})) {
                     graphics.draw(rect, {255, 222, 33, 100}, true);
                 }
+
+                // render decormap tiles
+                if (mode == Mode::Decor) {
+                    graphics.draw_sprite({screen_x, screen_y}, decormap(tilemap_x, tilemap_y).sprite);
+                    if (!decormap(tilemap_x, tilemap_y).event_name.empty()) {
+                        graphics.draw(rect, {255, 0, 0, 100});
+                    }
+
+                    // render invisible blocks as blue
+                    if (decormap(tilemap_x, tilemap_y).sprite.name == "border") {
+                        graphics.draw(rect, {0, 0, 255, 100}, true);
+                    }
+                }
             }
         }
     }
@@ -190,16 +214,33 @@ void LevelDesigner::draw_tile_display() {
 
 void LevelDesigner::update_tilemap() {
     if (selected_tile.x >= 0 && selected_tile.y >= 0 && !selected_palette_id.empty()) {
-        tilemap(selected_tile.x, selected_tile.y) = level.tile_types[selected_palette_id];
+        if (mode == Mode::Base) {
+            tilemap(selected_tile.x, selected_tile.y) = level.tile_types[selected_palette_id];
+        }
+        else if (mode == Mode::Decor) {
+            decormap(selected_tile.x, selected_tile.y) = level.tile_types[selected_palette_id];
+        }
     }
 }
 
 void LevelDesigner::save() {
-    level.tile_locations.clear();
-    for (int y = 0; y < tilemap.height; ++y) {
-        for (int x = 0; x < tilemap.width; ++x) {
-            if (tilemap(x, y).sprite.texture_id > -1) {
-                level.tile_locations[{x,y}] = tilemap(x,y).id;
+    if (mode == Mode::Base) {
+        level.tile_locations.clear();
+        for (int y = 0; y < tilemap.height; ++y) {
+            for (int x = 0; x < tilemap.width; ++x) {
+                if (tilemap(x, y).sprite.texture_id > -1) {
+                    level.tile_locations[{x,y}] = tilemap(x,y).id;
+                }
+            }
+        }
+    }
+    if (mode == Mode::Decor) {
+        level.decor_tile_locations.clear();
+        for (int y = 0; y < decormap.height; ++y) {
+            for (int x = 0; x < decormap.width; ++x) {
+                if (decormap(x, y).sprite.texture_id > -1) {
+                    level.decor_tile_locations[{x,y}] = decormap(x,y).id;
+                }
             }
         }
     }
