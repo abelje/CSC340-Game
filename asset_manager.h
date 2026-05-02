@@ -74,7 +74,7 @@ inline void from_json(const nlohmann::json& j, Level& level) {
         for (const auto& t : j.at("tiles_decor")) {
             Vec<int> pos = t.at("pos").get<Vec<int>>();
             std::string tile_id = t.at("tile").get<std::string>();
-            level.tile_locations[pos] = tile_id;
+            level.decor_tile_locations[pos] = tile_id;
         }
     }
     if (j.contains("enemies")) {
