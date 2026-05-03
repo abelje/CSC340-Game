@@ -3,21 +3,25 @@
 #include "fsm.h"
 #include "world.h"
 #include "game_object.h"
+#include "random.h"
 
 void AiInput::get_input() {
 
 }
 
 void AiInput::handle_input(World& world, GameObject& obj) {
-    constexpr float epsilon = 1e-4;
-
-    // check for colliding with left wall
-    if (world.collides({obj.physics.position.x - epsilon, obj.physics.position.y + obj.size.y - epsilon})) {
+    // random direction
+    int probability = randint(0,10);
+    if (probability < 2) {
+        next_action_type = ActionType::MoveUp;
+    }
+    else if (probability > 2 && probability < 5) {
+        next_action_type = ActionType::MoveDown;
+    }
+    else if (probability > 5 && probability < 7) {
         next_action_type = ActionType::MoveRight;
     }
-
-    // check for colliding with right wall
-    if (world.collides({obj.physics.position.x + obj.size.x - epsilon, obj.physics.position.y + obj.size.y - epsilon})) {
+    else if (probability >= 7 && probability <= 10) {
         next_action_type = ActionType::MoveLeft;
     }
 
