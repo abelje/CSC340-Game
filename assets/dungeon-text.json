@@ -1,0 +1,4868 @@
+{
+    "tiles": [
+        {
+            "sprite": {
+                "name": "dungeon-437_0",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_1",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_2",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_3",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_4",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_5",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_6",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_7",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_8",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_9",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_10",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_11",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_12",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_13",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_14",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_15",
+                "filename": "dungeon-437.png",
+                "location": [
+                    0,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_16",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_17",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_18",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_19",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_20",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_21",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_22",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_23",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_24",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_25",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_26",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_27",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_28",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_29",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_30",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_31",
+                "filename": "dungeon-437.png",
+                "location": [
+                    8,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_32",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_33",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_34",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_35",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_36",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_37",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_38",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_39",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_40",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_41",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_42",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_43",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_44",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_45",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_46",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_47",
+                "filename": "dungeon-437.png",
+                "location": [
+                    16,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_48",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_49",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_50",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_51",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_52",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_53",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_54",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_55",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_56",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_57",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_58",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_59",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_60",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_61",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_62",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_63",
+                "filename": "dungeon-437.png",
+                "location": [
+                    24,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_64",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_65",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_66",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_67",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_68",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_69",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_70",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_71",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_72",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_73",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_74",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_75",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_76",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_77",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_78",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_79",
+                "filename": "dungeon-437.png",
+                "location": [
+                    32,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_80",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_81",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_82",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_83",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_84",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_85",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_86",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_87",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_88",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_89",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_90",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_91",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_92",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_93",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_94",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_95",
+                "filename": "dungeon-437.png",
+                "location": [
+                    40,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_96",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_97",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_98",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_99",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_100",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_101",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_102",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_103",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_104",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_105",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_106",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_107",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_108",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_109",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_110",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_111",
+                "filename": "dungeon-437.png",
+                "location": [
+                    48,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_112",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_113",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_114",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_115",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_116",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_117",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_118",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_119",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_120",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_121",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_122",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_123",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_124",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_125",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_126",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_127",
+                "filename": "dungeon-437.png",
+                "location": [
+                    56,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_128",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_129",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_130",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_131",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_132",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_133",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_134",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_135",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_136",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_137",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_138",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_139",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_140",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_141",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_142",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_143",
+                "filename": "dungeon-437.png",
+                "location": [
+                    64,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_144",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_145",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_146",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_147",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_148",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_149",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_150",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_151",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_152",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_153",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_154",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_155",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_156",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_157",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_158",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_159",
+                "filename": "dungeon-437.png",
+                "location": [
+                    72,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_160",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_161",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_162",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_163",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_164",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_165",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_166",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_167",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_168",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_169",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_170",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_171",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_172",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_173",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_174",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_175",
+                "filename": "dungeon-437.png",
+                "location": [
+                    80,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_176",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_177",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_178",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_179",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_180",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_181",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_182",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_183",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_184",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_185",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_186",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_187",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_188",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_189",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_190",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_191",
+                "filename": "dungeon-437.png",
+                "location": [
+                    88,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_192",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_193",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_194",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_195",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_196",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_197",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_198",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_199",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_200",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_201",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_202",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_203",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_204",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_205",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_206",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_207",
+                "filename": "dungeon-437.png",
+                "location": [
+                    96,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_208",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_209",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_210",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_211",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_212",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_213",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_214",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_215",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_216",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_217",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_218",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_219",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_220",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_221",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_222",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_223",
+                "filename": "dungeon-437.png",
+                "location": [
+                    104,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_224",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_225",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_226",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_227",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_228",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_229",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_230",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_231",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_232",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_233",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_234",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_235",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_236",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_237",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_238",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_239",
+                "filename": "dungeon-437.png",
+                "location": [
+                    112,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_240",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    0
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_241",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    8
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_242",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    16
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_243",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    24
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_244",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    32
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_245",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    40
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_246",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    48
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_247",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    56
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_248",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    64
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_249",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    72
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_250",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    80
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_251",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    88
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_252",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    96
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_253",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    104
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_254",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    112
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        },
+        {
+            "sprite": {
+                "name": "dungeon-437_255",
+                "filename": "dungeon-437.png",
+                "location": [
+                    120,
+                    120
+                ],
+                "size": [
+                    8,
+                    8
+                ],
+                "scale": 8,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": false,
+            "event_name": ""
+        }
+    ]
+}

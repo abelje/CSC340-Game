@@ -10,7 +10,7 @@ SDL_AppResult SDL_AppInit(void **appstate, int, char**) {
         return SDL_APP_FAILURE;
     }
     Mode mode = Mode::Decor;
-    auto designer = new LevelDesigner("level_1", 37, 15, mode);
+    auto designer = new LevelDesigner("level_2", 37, 15, mode);
     *appstate = designer;
 
     return SDL_APP_CONTINUE;  /* carry on with the program! */

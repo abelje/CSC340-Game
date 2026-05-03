@@ -3928,6 +3928,223 @@
     "tiles_decor": [
         {
             "pos": [
+                1,
+                7
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_17"
+        },
+        {
+            "pos": [
+                2,
+                3
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_207"
+        },
+        {
+            "pos": [
+                2,
+                4
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_206"
+        },
+        {
+            "pos": [
+                2,
+                5
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_205"
+        },
+        {
+            "pos": [
+                2,
+                10
+            ],
+            "tile": "overworld-tileset.json:axe_stump"
+        },
+        {
+            "pos": [
+                3,
+                3
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_220"
+        },
+        {
+            "pos": [
+                3,
+                4
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_219"
+        },
+        {
+            "pos": [
+                3,
+                5
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_218"
+        },
+        {
+            "pos": [
+                4,
+                3
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_220"
+        },
+        {
+            "pos": [
+                4,
+                4
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_219"
+        },
+        {
+            "pos": [
+                4,
+                5
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_218"
+        },
+        {
+            "pos": [
+                4,
+                12
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_57"
+        },
+        {
+            "pos": [
+                5,
+                3
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_220"
+        },
+        {
+            "pos": [
+                5,
+                4
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_219"
+        },
+        {
+            "pos": [
+                5,
+                5
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_218"
+        },
+        {
+            "pos": [
+                5,
+                9
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_43"
+        },
+        {
+            "pos": [
+                6,
+                3
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_233"
+        },
+        {
+            "pos": [
+                6,
+                4
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_232"
+        },
+        {
+            "pos": [
+                6,
+                5
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_231"
+        },
+        {
+            "pos": [
+                6,
+                9
+            ],
+            "tile": "overworld-tileset.json:unlit-campfire"
+        },
+        {
+            "pos": [
+                7,
+                9
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_43"
+        },
+        {
+            "pos": [
+                7,
+                12
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_30"
+        },
+        {
+            "pos": [
+                8,
+                3
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_43"
+        },
+        {
+            "pos": [
+                9,
+                12
+            ],
+            "tile": "overworld-tileset.json:bush"
+        },
+        {
+            "pos": [
+                11,
+                2
+            ],
+            "tile": "overworld-tileset.json:flower_bush"
+        },
+        {
+            "pos": [
+                11,
+                10
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_57"
+        },
+        {
+            "pos": [
+                12,
+                2
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_18"
+        },
+        {
+            "pos": [
+                15,
+                1
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_50"
+        },
+        {
+            "pos": [
+                15,
+                2
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_49"
+        },
+        {
+            "pos": [
+                15,
+                3
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_48"
+        },
+        {
+            "pos": [
+                15,
+                9
+            ],
+            "tile": "overworld-tileset.json:sign"
+        },
+        {
+            "pos": [
                 15,
                 10
             ],
@@ -3939,6 +4156,27 @@
                 13
             ],
             "tile": "overworld-tileset.json:pot"
+        },
+        {
+            "pos": [
+                16,
+                1
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_63"
+        },
+        {
+            "pos": [
+                16,
+                2
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_62"
+        },
+        {
+            "pos": [
+                16,
+                3
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_61"
         },
         {
             "pos": [
@@ -3971,6 +4209,27 @@
         {
             "pos": [
                 18,
+                1
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_50"
+        },
+        {
+            "pos": [
+                18,
+                2
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_49"
+        },
+        {
+            "pos": [
+                18,
+                3
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_48"
+        },
+        {
+            "pos": [
+                18,
                 10
             ],
             "tile": "overworld-tileset.json:wood-fence"
@@ -3985,6 +4244,27 @@
         {
             "pos": [
                 19,
+                1
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_63"
+        },
+        {
+            "pos": [
+                19,
+                2
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_62"
+        },
+        {
+            "pos": [
+                19,
+                3
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_61"
+        },
+        {
+            "pos": [
+                19,
                 10
             ],
             "tile": "overworld-tileset.json:wood-fence"
@@ -3999,6 +4279,13 @@
         {
             "pos": [
                 20,
+                7
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_43"
+        },
+        {
+            "pos": [
+                20,
                 10
             ],
             "tile": "overworld-tileset.json:wood-fence"
@@ -4013,6 +4300,27 @@
         {
             "pos": [
                 21,
+                1
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_76"
+        },
+        {
+            "pos": [
+                21,
+                2
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_75"
+        },
+        {
+            "pos": [
+                21,
+                3
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_74"
+        },
+        {
+            "pos": [
+                21,
                 10
             ],
             "tile": "overworld-tileset.json:wood-fence"
@@ -4027,6 +4335,34 @@
         {
             "pos": [
                 22,
+                1
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_89"
+        },
+        {
+            "pos": [
+                22,
+                2
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_88"
+        },
+        {
+            "pos": [
+                22,
+                3
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_87"
+        },
+        {
+            "pos": [
+                22,
+                9
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_109"
+        },
+        {
+            "pos": [
+                22,
                 10
             ],
             "tile": "overworld-tileset.json:wood-fence"
@@ -4037,6 +4373,146 @@
                 13
             ],
             "tile": "overworld-tileset.json:pot"
+        },
+        {
+            "pos": [
+                23,
+                7
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_17"
+        },
+        {
+            "pos": [
+                24,
+                8
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_30"
+        },
+        {
+            "pos": [
+                26,
+                3
+            ],
+            "tile": "overworld-tileset.json:flower_bush"
+        },
+        {
+            "pos": [
+                27,
+                6
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_76"
+        },
+        {
+            "pos": [
+                27,
+                7
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_75"
+        },
+        {
+            "pos": [
+                27,
+                8
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_74"
+        },
+        {
+            "pos": [
+                28,
+                6
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_89"
+        },
+        {
+            "pos": [
+                28,
+                7
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_88"
+        },
+        {
+            "pos": [
+                28,
+                8
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_87"
+        },
+        {
+            "pos": [
+                29,
+                2
+            ],
+            "tile": "overworld-tileset.json:flower_bush"
+        },
+        {
+            "pos": [
+                29,
+                12
+            ],
+            "tile": "overworld-tileset.json:pot"
+        },
+        {
+            "pos": [
+                29,
+                13
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_30"
+        },
+        {
+            "pos": [
+                30,
+                11
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_2"
+        },
+        {
+            "pos": [
+                31,
+                11
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_80"
+        },
+        {
+            "pos": [
+                32,
+                2
+            ],
+            "tile": "overworld-tileset.json:flower_bush"
+        },
+        {
+            "pos": [
+                32,
+                11
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_41"
+        },
+        {
+            "pos": [
+                33,
+                12
+            ],
+            "tile": "overworld-tileset.json:pot"
+        },
+        {
+            "pos": [
+                33,
+                13
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_30"
+        },
+        {
+            "pos": [
+                34,
+                3
+            ],
+            "tile": "overworld-tileset.json:flower_bush"
+        },
+        {
+            "pos": [
+                35,
+                6
+            ],
+            "tile": "overworld-tileset.json:Overworld_Tileset_17"
         }
     ],
     "width": 37

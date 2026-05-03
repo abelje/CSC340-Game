@@ -104,6 +104,9 @@ void LevelDesigner::input() {
         if (keys[SDL_SCANCODE_1]) {
             place_enemy("pinkslime");
         }
+        if (keys[SDL_SCANCODE_2]) {
+            place_enemy("spider");
+        }
     }
 
     // timer for scrolling

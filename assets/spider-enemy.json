@@ -1,55 +1,50 @@
 {
     "sprites": [
         {
-            "sprite": {
-                "name": "idle",
-                "filename": "spider_spritesheet.png",
-                "location": [
-                    0,
-                    64
-                ],
-                "size": [
-                    16,
-                    16
-                ],
-                "scale": 4,
-                "number_of_frames": 4,
-                "dt_per_frame": 0.1
-            }
+            "name": "idle",
+            "filename": "spider_spritesheet.png",
+            "location": [
+                0,
+                64
+            ],
+            "size": [
+                16,
+                16
+            ],
+            "scale": 4,
+            "number_of_frames": 4,
+            "dt_per_frame": 0.1
         },
         {
-            "sprite": {
-                "name": "walking",
-                "filename": "spider_spritesheet.png",
-                "location": [
-                    0,
-                    32
-                ],
-                "size": [
-                    16,
-                    16
-                ],
-                "scale": 4,
-                "number_of_frames": 4,
-                "dt_per_frame": 0.1
-            }
+            "name": "walking",
+            "filename": "spider_spritesheet.png",
+            "location": [
+                0,
+                32
+            ],
+            "size": [
+                16,
+                16
+            ],
+            "scale": 4,
+            "number_of_frames": 4,
+            "dt_per_frame": 0.1
         },
         {
-            "sprite": {
-                "name": "death",
-                "filename": "spider_spritesheet.png",
-                "location": [
-                    0,
-                    0
-                ],
-                "size": [
-                    16,
-                    16
-                ],
-                "scale": 4,
-                "number_of_frames": 7,
-                "dt_per_frame": 0.1
-            }
+            "name": "death",
+            "filename": "spider_spritesheet.png",
+            "location": [
+                0,
+                0
+            ],
+            "size": [
+                16,
+                16
+            ],
+            "scale": 4,
+            "number_of_frames": 7,
+            "dt_per_frame": 0.1
+
         }
     ],
     "physics": {
