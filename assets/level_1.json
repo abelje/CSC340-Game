@@ -20,20 +20,16 @@
             "name": "background"
         },
         {
-            "filename": "musicholder-sword-sound.mp3",
+            "filename": "freesound_community-arrow-impact.mp3",
             "loop_forever": false,
-            "name": "swing"
+            "name": "impact"
         },
         {
             "filename": "djartmusic-arrow-swish.mp3",
             "loop_forever": false,
             "name": "arrow"
-        },
-        {
-            "filename": "freesounds123-running.mp3",
-            "loop_forever": false,
-            "name": "sprint"
         }
+
     ],
     "tile_filenames": [
         "overworld-tileset.json"

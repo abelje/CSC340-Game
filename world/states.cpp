@@ -168,7 +168,10 @@ Action *Sprinting::input(World& world, GameObject& obj, ActionType action_type) 
     return nullptr;
 }
 
-// Patrolling
+////////////////
+// Patrolling //
+////////////////
+
 void Patrolling::on_enter(World& world, GameObject& obj) {
     // set cooldown to a random amount of time 3-10 seconds
     elapsed = 0;
@@ -190,10 +193,12 @@ void Patrolling::update(World&, GameObject&, double dt) {
 /////////////////
 // Attack all //
 ////////////////
+
 void AttackAllEnemies::on_enter(World & world, GameObject & obj) {
     obj.color = {255, 100, 0, 255};
     for (auto& enemy : world.game_objects) {
-        enemy->take_damage(obj.damage);
+        if (enemy == world.player) return;
+        enemy->take_damage(obj.damage, world.audio);
     }
     elapsed = 0;
 }

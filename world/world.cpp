@@ -56,7 +56,7 @@ void World::update(float dt) {
     std::vector<GameObject*> collides_with = quadtree.query_range(player->get_bounding_box());
     for (auto& obj : collides_with) {
         if (obj == player) continue;
-        player->take_damage(obj->damage);
+        player->take_damage(obj->damage, audio);
     }
 
     //check for collision with projectile and enemy
@@ -64,7 +64,7 @@ void World::update(float dt) {
         std::vector<GameObject*> p_collides_with = quadtree.query_range(projectile->get_bounding_box());
         for (auto& obj : p_collides_with) {
             if (obj == player) continue;
-            obj->take_damage(projectile->damage);
+            obj->take_damage(projectile->damage, audio);
             projectile->elapsed += projectile->lifetime;
         }
     }

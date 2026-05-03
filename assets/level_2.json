@@ -71,24 +71,19 @@
     ],
     "sounds": [
         {
-            "filename": "freesound_community-a_dungeon_ambience_loop.mp3",
+            "filename": "kaden_cook-epic-dungeon-beat.mp3",
             "loop_forever": true,
             "name": "background"
         },
         {
-            "filename": "musicholder-sword-sound.mp3",
+            "filename": "freesound_community-arrow-impact.mp3",
             "loop_forever": false,
-            "name": "swing"
+            "name": "impact"
         },
         {
             "filename": "djartmusic-arrow-swish.mp3",
             "loop_forever": false,
             "name": "arrow"
-        },
-        {
-            "filename": "freesounds123-running.mp3",
-            "loop_forever": false,
-            "name": "sprint"
         }
     ],
     "tile_filenames": [
@@ -1059,14 +1054,14 @@
                 16,
                 4
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_7"
+            "tile": "dungeon-tileset.json:border"
         },
         {
             "pos": [
                 16,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_1"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_2"
         },
         {
             "pos": [
@@ -1367,7 +1362,7 @@
                 19,
                 9
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_9"
+            "tile": "dungeon-tileset.json:border"
         },
         {
             "pos": [
@@ -2935,13 +2930,6 @@
         {
             "pos": [
                 15,
-                2
-            ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_73"
-        },
-        {
-            "pos": [
-                15,
                 8
             ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_139"
@@ -2956,9 +2944,9 @@
         {
             "pos": [
                 16,
-                2
+                4
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_8"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_9"
         },
         {
             "pos": [
@@ -3008,6 +2996,13 @@
                 8
             ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_8"
+        },
+        {
+            "pos": [
+                19,
+                9
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_9"
         },
         {
             "pos": [

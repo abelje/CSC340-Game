@@ -5,6 +5,7 @@
 #include "graphics.h"
 #include "physics.h"
 #include "animated_sprite.h"
+#include "audio.h"
 
 class World;
 class FSM;
@@ -25,7 +26,7 @@ public:
 
     AABB get_bounding_box();
 
-    void take_damage(int attack_damage);
+    void take_damage(int attack_damage, Audio* audio);
     bool flash_sprite() const;
 
     // GameObject data

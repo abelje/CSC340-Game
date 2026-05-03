@@ -55,8 +55,9 @@ AABB GameObject::get_bounding_box() {
     return bounding_box;
 }
 
-void GameObject::take_damage(int attack_damage) {
+void GameObject::take_damage(int attack_damage, Audio* audio) {
     if (iframe_time_remaining > 0) return;
+    audio->play_sounds("impact");
     health -= attack_damage;
     iframe_time_remaining = 1;
     if (health <= 0) {

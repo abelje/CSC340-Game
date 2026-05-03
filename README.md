@@ -11,12 +11,17 @@ Arrows Pack can be found on [https://kenam0.itch.io/arrows-pack](https://kenam0.
 Pixel Quest music can be found on [https://pixabay.com/music/adventure-pixel-quest-364092/](https://pixabay.com/music/adventure-pixel-quest-364092/)
 by user nakaradaalexander.
 
-Sword swing sound effect from [https://pixabay.com/sound-effects/film-special-effects-sword-sound-260274/](https://pixabay.com/sound-effects/film-special-effects-sword-sound-260274/)
-by user MUSICHOLDER.
-
 Arrow shot sound effect from [https://pixabay.com/sound-effects/film-special-effects-arrow-swish-03-306040/](https://pixabay.com/sound-effects/film-special-effects-arrow-swish-03-306040/)
 by user DJARTMUSIC.
 
-[https://pixabay.com/sound-effects/film-special-effects-a-dungeon-ambience-loop-79423/](https://pixabay.com/sound-effects/film-special-effects-a-dungeon-ambience-loop-79423/)
+Dungeon music from [https://pixabay.com/music/beats-epic-dungeon-beat-259883/](https://pixabay.com/music/beats-epic-dungeon-beat-259883/) by
+user Kaden_Cook.
 
-[https://pixabay.com/sound-effects/film-special-effects-running-363346/](https://pixabay.com/sound-effects/film-special-effects-running-363346/)
+Arrow impact from [https://pixabay.com/sound-effects/film-special-effects-arrow-impact-87260/](https://pixabay.com/sound-effects/film-special-effects-arrow-impact-87260/)
+by user Twisted_Euphoria.
+
+Victory music from [https://pixabay.com/music/video-games-victory-game-classic-arcade-game-116830/](https://pixabay.com/music/video-games-victory-game-classic-arcade-game-116830/)
+by Dream-Protocol.
+
+Gameover music from [https://pixabay.com/sound-effects/musical-game-over-284367/](https://pixabay.com/sound-effects/musical-game-over-284367/)
+by Kuzu420.

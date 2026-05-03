@@ -6,14 +6,9 @@
     ],
     "sounds": [
         {
-            "filename": "nakaradaalexander-pixel-quest.mp3",
+            "filename": "kuzu420-game-over.mp3",
             "loop_forever": true,
             "name": "background"
-        },
-        {
-            "filename": "musicholder-sword-sound.mp3",
-            "loop_forever": false,
-            "name": "swing"
         },
         {
             "filename": "djartmusic-arrow-swish.mp3",
@@ -21,9 +16,9 @@
             "name": "arrow"
         },
         {
-            "filename": "freesounds123-running.mp3",
+            "filename": "freesound_community-arrow-impact.mp3",
             "loop_forever": false,
-            "name": "sprint"
+            "name": "impact"
         }
     ],
     "tile_filenames": [
