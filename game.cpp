@@ -1,7 +1,5 @@
 #include "game.h"
 
-#include <iostream>
-
 #include "ai_input.h"
 #include "asset_manager.h"
 #include "fsm.h"
@@ -70,7 +68,6 @@ void Game::update() {
                 camera.update(player->physics.position + displacement, dt);
 
                 if (world->end_level) {
-                    std::cout << "Bye!!!\n";
                     load_level();
                 }
                 // check for game over
@@ -118,6 +115,7 @@ void Game::render() {
 
 void Game::get_events() {
     events["next_level"] = new NextLevel();
+    events["locked_level"] = new LockedLevel();
 }
 
 void Game::load_level() {
