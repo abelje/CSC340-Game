@@ -84,9 +84,9 @@ void Graphics::draw_sprite(const Vec<float> &pixel, const Sprite &sprite, bool f
     SDL_FlipMode flip = sprite.flip ? SDL_FLIP_HORIZONTAL : SDL_FLIP_NONE;
 
     auto player_filename = (std::filesystem::current_path() / "assets" / "char_spritesheet.png").string();
+    SDL_SetTextureColorMod(texture, 255, 255, 255);
     if (sprite.filename == player_filename) {
         // set player alpha to be below decormap
-        SDL_SetTextureColorMod(texture, 255, 255, 255);
         SDL_SetTextureAlphaMod(texture, 210);
     }
 

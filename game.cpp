@@ -67,12 +67,13 @@ void Game::update() {
                 Vec displacement = 8.0f * player->physics.velocity / (1.0f + L);
                 camera.update(player->physics.position + displacement, dt);
 
-                if (world->end_level) {
-                    load_level();
-                }
                 // check for game over
                 if (world->end_game) {
                     mode = GameMode::GameOver;
+                    world->end_level = true;
+                }
+                if (world->end_level) {
+                    load_level();
                 }
                 break;
         }
@@ -104,11 +105,6 @@ void Game::render() {
         camera.render(*projectile);
     }
 
-    // game end
-    if (mode == GameMode::GameOver) {
-        camera.render_game_over();
-    }
-
     // update
     graphics.update();
 }
@@ -119,8 +115,17 @@ void Game::get_events() {
 }
 
 void Game::load_level() {
-    std::string level_name = "level_" + std::to_string(++current_level);
+    std::string level_name = " ";
     Level level{level_name};
+    if (mode == GameMode::Playing) {
+        level_name = "level_" + std::to_string(++current_level);
+        level.name = level_name;
+    }
+    if (mode == GameMode::GameOver) {
+        level_name = "gameover";
+        level.name = level_name;
+    }
+
     AssetManager::get_level_details(graphics, level);
 
     // create the world

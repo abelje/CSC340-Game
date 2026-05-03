@@ -3271,7 +3271,7 @@
                 30,
                 11
             ],
-            "tile": "overworld-tileset.json:grass_blocking"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
@@ -3481,7 +3481,7 @@
                 32,
                 11
             ],
-            "tile": "overworld-tileset.json:grass_blocking"
+            "tile": "overworld-tileset.json:grass"
         },
         {
             "pos": [
