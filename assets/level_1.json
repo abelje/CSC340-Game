@@ -324,7 +324,7 @@
                 2,
                 10
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -905,7 +905,7 @@
                 8,
                 3
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -1626,7 +1626,7 @@
                 15,
                 1
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -1682,14 +1682,14 @@
                 15,
                 9
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
                 15,
                 10
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -1710,7 +1710,7 @@
                 15,
                 13
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -1731,7 +1731,7 @@
                 16,
                 1
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -1794,7 +1794,7 @@
                 16,
                 10
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -1815,7 +1815,7 @@
                 16,
                 13
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -1899,7 +1899,7 @@
                 17,
                 10
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -1920,7 +1920,7 @@
                 17,
                 13
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -1941,7 +1941,7 @@
                 18,
                 1
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2004,7 +2004,7 @@
                 18,
                 10
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2025,7 +2025,7 @@
                 18,
                 13
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2046,7 +2046,7 @@
                 19,
                 1
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2109,7 +2109,7 @@
                 19,
                 10
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2130,7 +2130,7 @@
                 19,
                 13
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2193,7 +2193,7 @@
                 20,
                 7
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2214,7 +2214,7 @@
                 20,
                 10
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2235,7 +2235,7 @@
                 20,
                 13
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2256,7 +2256,7 @@
                 21,
                 1
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2319,7 +2319,7 @@
                 21,
                 10
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2340,7 +2340,7 @@
                 21,
                 13
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2361,7 +2361,7 @@
                 22,
                 1
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2417,14 +2417,14 @@
                 22,
                 9
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
                 22,
                 10
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2445,7 +2445,7 @@
                 22,
                 13
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2529,7 +2529,7 @@
                 23,
                 10
             ],
-            "tile": "overworld-tileset.json:stone_wall_btm_left"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2634,7 +2634,7 @@
                 24,
                 10
             ],
-            "tile": "overworld-tileset.json:stone_wall_btm_center"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2739,7 +2739,7 @@
                 25,
                 10
             ],
-            "tile": "overworld-tileset.json:stone_wall_btm_right"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -2921,7 +2921,7 @@
                 27,
                 6
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -3026,7 +3026,7 @@
                 28,
                 6
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -3173,7 +3173,7 @@
                 29,
                 12
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -3271,7 +3271,7 @@
                 30,
                 11
             ],
-            "tile": "overworld-tileset.json:stone"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -3481,7 +3481,7 @@
                 32,
                 11
             ],
-            "tile": "overworld-tileset.json:stone"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -3593,7 +3593,7 @@
                 33,
                 12
             ],
-            "tile": "overworld-tileset.json:grass"
+            "tile": "overworld-tileset.json:grass_blocking"
         },
         {
             "pos": [
@@ -4383,10 +4383,31 @@
         },
         {
             "pos": [
+                23,
+                10
+            ],
+            "tile": "overworld-tileset.json:stone_wall_btm_left"
+        },
+        {
+            "pos": [
                 24,
                 8
             ],
             "tile": "overworld-tileset.json:Overworld_Tileset_30"
+        },
+        {
+            "pos": [
+                24,
+                10
+            ],
+            "tile": "overworld-tileset.json:stone_wall_btm_center"
+        },
+        {
+            "pos": [
+                25,
+                10
+            ],
+            "tile": "overworld-tileset.json:stone_wall_btm_right"
         },
         {
             "pos": [

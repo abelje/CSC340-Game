@@ -155,6 +155,11 @@ void LevelDesigner::render() {
                 Color color = selected_tile == Vec<int>{tilemap_x, tilemap_y} ? Color{255, 255, 0, 255} : Color{0, 0, 0, 255};
                 graphics.draw(rect, color, false);
 
+                // render blocking tiles green
+                if (tilemap(tilemap_x, tilemap_y).blocking) {
+                    graphics.draw(rect, {0, 255, 0, 100}, true);
+                }
+
                 // render player location as translucent purple
                 if (level.player_spawn_location.x == tilemap_x && level.player_spawn_location.y == tilemap_y) {
                     graphics.draw(rect, {255, 0, 255, 100}, true);
