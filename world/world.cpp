@@ -126,29 +126,35 @@ void World::update_object(GameObject* obj, double dt) {
 }
 
 void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velocity) {
+    float epsilon = 0.001f;
+    auto left = position.x;
+    auto right = position.x + size.x - epsilon;
+    auto bottom = position.y;
+    auto top = position.y + size.y - epsilon;
+
     // test sides first. if both collide move backward
     // bottom side
-    if (collides(position) && collides({position.x + size.x, position.y})) {
+    if (collides({left, bottom}) && collides({right, bottom})) {
         position.y = std::ceil(position.y);
         velocity.y = 0;
     }
     // top side
-    else if (collides({position.x, position.y + size.y}) && collides({position.x + size.x, position.y + size.y})) {
+    else if (collides({left, top}) && collides({right, top})) {
         position.y = std::floor(position.y);
         velocity.y = 0;
     }
     // left side
-    if (collides(position) && collides({position.x, position.y + size.y})) {
+    if (collides({left, bottom}) && collides({left, top})) {
         position.x = std::ceil(position.x);
         velocity.x = 0;
     }
     // right side
-    else if (collides({position.x + size.x, position.y}) && collides({position.x + size.x, position.y + size.y})) {
+    else if (collides({right, bottom}) && collides({right, top})) {
         position.x = std::floor(position.x);
         velocity.x = 0;
     }
     // test corners next, move back in smaller axis
-    if (collides(position)) {
+    if (collides({left, bottom})) {
         float dx = std::ceil(position.x) - position.x;
         float dy = std::ceil(position.y) - position.y;
         if (dx > dy) {
@@ -160,7 +166,7 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
             velocity.x = 0;
         }
     }
-    else if (collides({position.x, position.y + size.y})) {
+    else if (collides({left, top})) {
         float dx = std::ceil(position.x) - position.x;
         float dy = position.y - std::floor(position.y);
         if (dx > dy) {
@@ -172,7 +178,7 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
             velocity.x = 0;
         }
     }
-    else if (collides({position.x + size.x, position.y})) {
+    else if (collides({right, bottom})) {
         float dx = position.x - std::floor(position.x);
         float dy = std::ceil(position.y) - position.y;
         if (dx > dy) {
@@ -184,7 +190,7 @@ void World::move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velo
             velocity.x = 0;
         }
     }
-    else if (collides({position.x + size.x, position.y + size.y})) {
+    else if (collides({right, top})) {
         float dx = position.x - std::floor(position.x);
         float dy = position.y - std::floor(position.y);
         if (dx > dy) {
