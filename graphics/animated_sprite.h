@@ -8,6 +8,7 @@ public:
     AnimatedSprite(const std::vector<Sprite>& sprites, double dt_per_frame, int starting_frame=0);
 
     void flip(bool flip);
+    void rotate(double angle);
     void update(double dt);
     void reset();
     Sprite get_sprite();

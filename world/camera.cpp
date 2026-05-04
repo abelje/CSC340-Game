@@ -5,7 +5,7 @@
 #include "physics.h"
 
 Camera::Camera(Graphics &graphics, float tilesize)
-    : graphics{graphics}, tilesize{tilesize} {
+    : graphics{graphics}, tilesize{tilesize}, grid_toggle{false, 0.25} {
     calculate_visible_tiles();
     physics.damping = 0.9;
 }
@@ -69,13 +69,13 @@ void Camera::render(const Tilemap &tilemap) const {
 
             if (tile.blocking) {
                 // render(position, {0, 255, 0, 255});
-                render(position, tile.sprite);
+                render(position, tilemap(x, y).sprite);
             }
             else {
                 render(position, tile.sprite);
             }
             if (grid_toggle.on) {
-                render(position, {0, 0, 0, 0}, false);
+                render(position, Color{0, 0, 0, 255}, false);
             }
         }
     }
@@ -88,10 +88,10 @@ void Camera::calculate_visible_tiles() {
     visible_min = center - num_tiles;
 }
 
-void Camera::render(const Vec<float> &position, const Sprite &sprite) const {
+void Camera::render(const Vec<float> &position, const Sprite &sprite, bool flash) const {
     Vec<float> pixel = world_to_screen(position);
     pixel.y += tilesize/2;
-    graphics.draw_sprite(pixel, sprite);
+    graphics.draw_sprite(pixel, sprite, flash);
 }
 
 void Camera::render(const GameObject &obj) const {
@@ -99,5 +99,10 @@ void Camera::render(const GameObject &obj) const {
     if (grid_toggle.on) {
         render(obj.physics.position, obj.color);
     }
-    render(obj.physics.position, obj.sprite);
+    render(obj.physics.position, obj.sprite, obj.flash_sprite());
+}
+
+void Camera::render_game_over() {
+    SDL_FRect full_screen{0.0f, 0.0f, static_cast<float>(graphics.width), static_cast<float>(graphics.height)};
+    graphics.draw(full_screen, Color{0,0,0,180}, true);
 }

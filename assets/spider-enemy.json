@@ -1,0 +1,72 @@
+{
+    "sprites": [
+        {
+            "name": "idle",
+            "filename": "spider_spritesheet.png",
+            "location": [
+                0,
+                64
+            ],
+            "size": [
+                16,
+                16
+            ],
+            "scale": 4,
+            "number_of_frames": 4,
+            "dt_per_frame": 0.1
+        },
+        {
+            "name": "walking",
+            "filename": "spider_spritesheet.png",
+            "location": [
+                0,
+                32
+            ],
+            "size": [
+                16,
+                16
+            ],
+            "scale": 4,
+            "number_of_frames": 4,
+            "dt_per_frame": 0.1
+        },
+        {
+            "name": "death",
+            "filename": "spider_spritesheet.png",
+            "location": [
+                0,
+                0
+            ],
+            "size": [
+                16,
+                16
+            ],
+            "scale": 4,
+            "number_of_frames": 7,
+            "dt_per_frame": 0.1
+
+        }
+    ],
+    "physics": {
+        "velocity": [
+            0,
+            0
+        ],
+        "acceleration": [
+            0,
+            0
+        ],
+        "gravity": 0.0,
+        "damping": 0.9,
+        "walk_acceleration": 60.0,
+        "jump_velocity": 0.0,
+        "terminal_velocity": 0.0
+    },
+    "size": [
+        1,
+        1
+    ],
+    "health": 10,
+    "max_health": 10,
+    "damage": 2
+}

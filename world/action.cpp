@@ -1,6 +1,10 @@
 #include "action.h"
 
+#include <iostream>
+
+#include "fsm.h"
 #include "game_object.h"
+#include "projectile.h"
 #include "world.h"
 
 void MoveRight::perform(World&, GameObject& obj) {
@@ -41,4 +45,26 @@ void MoveDownRight::perform(World&, GameObject& obj) {
 
 void Sprint::perform(World&, GameObject& obj) {
     obj.physics.walk_acceleration *= 2.0f;
+}
+
+void ShootArrow::perform(World& world, GameObject& obj) {
+    auto arrow = dynamic_cast<Projectile*>(world.available_items["arrow"]());
+    arrow->physics.position = obj.physics.position;
+    arrow->last_direction = obj.last_direction;
+    if (obj.last_direction == "left") {
+        arrow->sprites[arrow->sprite.name].rotate(180);
+        arrow->physics.velocity.x = -arrow->physics.velocity.x;
+    }
+    if (obj.last_direction == "up") {
+        arrow->sprites[arrow->sprite.name].rotate(270);
+        arrow->physics.velocity.y = arrow->physics.velocity.x;
+        arrow->physics.velocity.x = 0;
+    }
+    if (obj.last_direction == "down") {
+        arrow->sprites[arrow->sprite.name].rotate(90);
+        arrow->physics.velocity.y = -arrow->physics.velocity.x;
+        arrow->physics.velocity.x = 0;
+    }
+    world.projectiles.push_back(arrow);
+    world.audio->play_sounds("arrow");
 }

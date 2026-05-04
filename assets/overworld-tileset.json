@@ -1503,6 +1503,25 @@
         },
         {
             "sprite": {
+                "name": "grass_blocking",
+                "filename": "Overworld_Tileset.png",
+                "location": [
+                    96,
+                    16
+                ],
+                "size": [
+                    16,
+                    16
+                ],
+                "scale": 4,
+                "number_of_frames": 1,
+                "dt_per_frame": -1
+            },
+            "blocking": true,
+            "event_name": ""
+        },
+        {
+            "sprite": {
                 "name": "Overworld_Tileset_80",
                 "filename": "Overworld_Tileset.png",
                 "location": [
@@ -1612,7 +1631,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -1840,7 +1859,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {
@@ -2087,7 +2106,7 @@
                 "number_of_frames": 1,
                 "dt_per_frame": -1
             },
-            "blocking": false,
+            "blocking": true,
             "event_name": ""
         },
         {

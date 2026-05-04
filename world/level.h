@@ -2,9 +2,10 @@
 
 #include "vec.h"
 #include "tilemap.h"
-
+#include "audio.h"
 #include <string>
 #include <map>
+
 
 using TileLocations = std::map<Vec<int>, std::string>;
 using EnemyLocations = std::map<Vec<float>, std::string>;
@@ -19,7 +20,9 @@ public:
     int height{0};
     std::vector<std::string> tile_filenames;
     TileLocations tile_locations;
+    TileLocations decor_tile_locations;
     std::map<std::string, Tile> tile_types;
+    std::vector<Sound> sounds;
 
     Vec<int> player_spawn_location{-1, -1};
     EnemyLocations enemy_locations;

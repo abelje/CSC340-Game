@@ -1,4 +1,7 @@
 #include "graphics.h"
+
+#include <filesystem>
+#include <iostream>
 #include <stdexcept>
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_surface.h>
@@ -64,7 +67,7 @@ int Graphics::get_texture_id(const std::string &image_filename) {
     }
 }
 
-void Graphics::draw_sprite(const Vec<float> &pixel, const Sprite &sprite) {
+void Graphics::draw_sprite(const Vec<float> &pixel, const Sprite &sprite, bool flash) {
     if (sprite.texture_id < 0) {
         // sprite has no texture
         return;
@@ -79,5 +82,23 @@ void Graphics::draw_sprite(const Vec<float> &pixel, const Sprite &sprite) {
     SDL_FRect image_pixels{sprite.location.x, sprite.location.y, sprite.size.x, sprite.size.y};
     SDL_Texture *texture = textures.at(sprite.texture_id);
     SDL_FlipMode flip = sprite.flip ? SDL_FLIP_HORIZONTAL : SDL_FLIP_NONE;
+
+    auto player_filename = (std::filesystem::current_path() / "assets" / "char_spritesheet.png").string();
+    SDL_SetTextureColorMod(texture, 255, 255, 255);
+    if (sprite.filename == player_filename) {
+        // set player alpha to be below decormap
+        SDL_SetTextureAlphaMod(texture, 210);
+    }
+
+    if (flash) {
+        SDL_SetTextureColorMod(texture, 255, 0, 0);
+        SDL_SetTextureAlphaMod(texture, 160);
+    }
+
     SDL_RenderTextureRotated(renderer, texture, &image_pixels, &screen_pixels, sprite.angle, &center, flip);
+
+    if (flash) {
+        SDL_SetTextureColorMod(texture, 255, 0, 0);
+        SDL_SetTextureAlphaMod(texture, 255);
+    }
 }

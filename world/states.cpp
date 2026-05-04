@@ -1,6 +1,7 @@
 #include "states.h"
 #include "action.h"
 #include "game_object.h"
+#include "random.h"
 #include "world.h"
 
 // Helper Function
@@ -52,6 +53,9 @@ Action *Standing::input(World& world, GameObject& obj, ActionType action_type) {
         obj.last_direction = "down";
         obj.set_sprite("walk_down");
         return new MoveDown();
+    }
+    if (action_type == ActionType::AttackAll) {
+        obj.fsm->transition(Transition::AttackAll, world, obj);
     }
 
     return nullptr;
@@ -162,4 +166,46 @@ Action *Sprinting::input(World& world, GameObject& obj, ActionType action_type) 
     }
 
     return nullptr;
+}
+
+////////////////
+// Patrolling //
+////////////////
+
+void Patrolling::on_enter(World& world, GameObject& obj) {
+    // set cooldown to a random amount of time 3-10 seconds
+    elapsed = 0;
+    cooldown = randint(3, 10);
+    Running::on_enter(world, obj);
+}
+
+Action* Patrolling::input(World& world, GameObject& obj, ActionType action_type) {
+    if (elapsed >= cooldown) {
+        return Running::input(world, obj, ActionType::None);
+    }
+    return Running::input(world, obj, action_type);
+}
+
+void Patrolling::update(World&, GameObject&, double dt) {
+    elapsed += dt;
+}
+
+/////////////////
+// Attack all //
+////////////////
+
+void AttackAllEnemies::on_enter(World & world, GameObject & obj) {
+    obj.color = {255, 100, 0, 255};
+    for (auto& enemy : world.game_objects) {
+        if (enemy == world.player) return;
+        enemy->take_damage(obj.damage, world.audio);
+    }
+    elapsed = 0;
+}
+
+void AttackAllEnemies::update(World & world, GameObject & obj, double dt) {
+    elapsed += dt;
+    if (elapsed >= cooldown) {
+        obj.fsm->transition(Transition::Stop, world, obj);
+    }
 }

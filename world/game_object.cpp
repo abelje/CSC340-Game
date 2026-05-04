@@ -4,11 +4,10 @@
 #include "fsm.h"
 #include "action.h"
 #include "input.h"
+#include "quadtree.h"
 
-GameObject::GameObject(std::string name, FSM* fsm, Input* input, Color color)
-    : obj_name{name}, fsm{fsm}, input{input}, color{color} {
-    // physics.position = Vec<float>{static_cast<float>(position.x), static_cast<float>(position.y)};
-}
+GameObject::GameObject(std::string name, FSM* fsm, Input* input, const Color& color)
+    : obj_name{name}, fsm{fsm}, input{input}, color{color} {}
 
 GameObject::~GameObject() {
     delete fsm;
@@ -16,13 +15,17 @@ GameObject::~GameObject() {
 }
 
 void GameObject::update(World &world, double dt) {
-    fsm->current_state->update(world, *this, dt);
+    if (fsm != nullptr) {
+        fsm->current_state->update(world, *this, dt);
+    }
     sprites[sprite_name].update(dt);
     sprites[sprite_name].flip(physics.acceleration.x < 0);
+
     if (physics.walk_acceleration > physics.default_walk_acceleration) {
         sprites[sprite_name].update(0.15);
     }
     set_sprite(sprite_name);
+    if (iframe_time_remaining > 0.0) iframe_time_remaining -= dt;
 }
 
 std::pair<Vec<float>, Color> GameObject::get_sprite() const {
@@ -43,4 +46,30 @@ void GameObject::set_sprite(const std::string &next_sprite) {
         }
     }
     sprite = sprites[sprite_name].get_sprite();
+}
+
+AABB GameObject::get_bounding_box() {
+    Vec<float> half_size = {size.x / 2.0f, size.y / 2.0f};
+    Vec<float> center = {physics.position.x + half_size.x, physics.position.y + half_size.y};
+    AABB bounding_box{center, half_size};
+    return bounding_box;
+}
+
+void GameObject::take_damage(int attack_damage, Audio* audio) {
+    if (iframe_time_remaining > 0) return;
+    audio->play_sounds("impact");
+    health -= attack_damage;
+    iframe_time_remaining = 1;
+    if (health <= 0) {
+        is_alive = false;
+    }
+}
+
+bool GameObject::flash_sprite() const {
+    if (iframe_time_remaining <= 0.0) {
+        return false;
+    }
+
+    // alternate overlay on/off every 80 ms
+    return ((SDL_GetTicks() / 80) % 2) == 0;
 }

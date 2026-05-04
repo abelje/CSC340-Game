@@ -3,7 +3,7 @@
 #include "fsm.h"
 
 void KeyboardInput::get_input() {
-    if (next_action_type == ActionType::Sprint) return;
+    if (next_action_type == ActionType::Sprint || next_action_type == ActionType::AttackAll) return;
     const bool *key_states = SDL_GetKeyboardState(NULL);
 
     // check for both W,D -> UpRight
@@ -46,6 +46,11 @@ void KeyboardInput::get_input() {
     else if (key_states[SDL_SCANCODE_D]) {
         next_action_type = ActionType::MoveRight;
     }
+
+    // // Swing
+    // else if (key_states[SDL_SCANCODE_J]) {
+    //     next_action_type = ActionType::Swing;
+    // }
 }
 
 void KeyboardInput::handle_input(World &world, GameObject &obj) {
@@ -59,10 +64,18 @@ void KeyboardInput::handle_input(World &world, GameObject &obj) {
     }
 }
 
-void KeyboardInput::collect_discrete_event(SDL_Event *event) {
+Action* KeyboardInput::collect_discrete_event(SDL_Event *event) {
     if (event->type == SDL_EVENT_KEY_DOWN && event->key.repeat == 0) {
         if (event->key.scancode == SDL_SCANCODE_LCTRL || event->key.scancode == SDL_SCANCODE_RCTRL) {
             next_action_type = ActionType::Sprint;
         }
+        if (event->key.scancode == SDL_SCANCODE_M) {
+            next_action_type = ActionType::AttackAll;
+        }
+        if (event->key.scancode == SDL_SCANCODE_K) {
+            return new ShootArrow();
+        }
     }
+
+    return nullptr;
 }

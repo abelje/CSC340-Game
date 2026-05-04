@@ -1,8 +1,90 @@
 {
+    "enemies": [
+        {
+            "enemy": "spider",
+            "pos": [
+                11.0,
+                3.0
+            ]
+        },
+        {
+            "enemy": "pinkslime",
+            "pos": [
+                16.0,
+                8.0
+            ]
+        },
+        {
+            "enemy": "pinkslime",
+            "pos": [
+                20.0,
+                4.0
+            ]
+        },
+        {
+            "enemy": "pinkslime",
+            "pos": [
+                20.0,
+                7.0
+            ]
+        },
+        {
+            "enemy": "pinkslime",
+            "pos": [
+                22.0,
+                1.0
+            ]
+        },
+        {
+            "enemy": "spider",
+            "pos": [
+                24.0,
+                9.0
+            ]
+        },
+        {
+            "enemy": "spider",
+            "pos": [
+                28.0,
+                4.0
+            ]
+        },
+        {
+            "enemy": "spider",
+            "pos": [
+                32.0,
+                2.0
+            ]
+        },
+        {
+            "enemy": "spider",
+            "pos": [
+                32.0,
+                8.0
+            ]
+        }
+    ],
     "height": 15,
     "player_spawn_location": [
         11,
         7
+    ],
+    "sounds": [
+        {
+            "filename": "kaden_cook-epic-dungeon-beat.mp3",
+            "loop_forever": true,
+            "name": "background"
+        },
+        {
+            "filename": "freesound_community-arrow-impact.mp3",
+            "loop_forever": false,
+            "name": "impact"
+        },
+        {
+            "filename": "djartmusic-arrow-swish.mp3",
+            "loop_forever": false,
+            "name": "arrow"
+        }
     ],
     "tile_filenames": [
         "dungeon-tileset.json"
@@ -221,6 +303,83 @@
         {
             "pos": [
                 8,
+                1
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                8,
+                2
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                8,
+                3
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                8,
+                4
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                8,
+                5
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                8,
+                6
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                8,
+                7
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                8,
+                8
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                8,
+                9
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                8,
+                10
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                8,
+                11
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                8,
                 14
             ],
             "tile": "dungeon-tileset.json:border"
@@ -272,26 +431,40 @@
                 9,
                 6
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_1"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_8"
         },
         {
             "pos": [
                 9,
                 7
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_1"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_8"
         },
         {
             "pos": [
                 9,
                 8
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_1"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_8"
         },
         {
             "pos": [
                 9,
                 9
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_2"
+        },
+        {
+            "pos": [
+                9,
+                10
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_1"
+        },
+        {
+            "pos": [
+                9,
+                11
             ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_0"
         },
@@ -314,7 +487,7 @@
                 10,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
@@ -342,7 +515,7 @@
                 10,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_16"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_121"
         },
         {
             "pos": [
@@ -370,7 +543,21 @@
                 10,
                 9
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_26"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
+        },
+        {
+            "pos": [
+                10,
+                10
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_35"
+        },
+        {
+            "pos": [
+                10,
+                11
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
             "pos": [
@@ -391,14 +578,14 @@
                 11,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
                 11,
                 2
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_137"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
@@ -419,7 +606,7 @@
                 11,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_29"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_134"
         },
         {
             "pos": [
@@ -446,6 +633,20 @@
             "pos": [
                 11,
                 9
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
+        },
+        {
+            "pos": [
+                11,
+                10
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_14"
+        },
+        {
+            "pos": [
+                11,
+                11
             ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
@@ -468,7 +669,7 @@
                 12,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
@@ -496,7 +697,7 @@
                 12,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_16"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_134"
         },
         {
             "pos": [
@@ -524,6 +725,20 @@
                 12,
                 9
             ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
+        },
+        {
+            "pos": [
+                12,
+                10
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_14"
+        },
+        {
+            "pos": [
+                12,
+                11
+            ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
@@ -545,7 +760,7 @@
                 13,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
@@ -573,7 +788,7 @@
                 13,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_16"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_134"
         },
         {
             "pos": [
@@ -601,6 +816,20 @@
                 13,
                 9
             ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
+        },
+        {
+            "pos": [
+                13,
+                10
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_14"
+        },
+        {
+            "pos": [
+                13,
+                11
+            ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
@@ -622,7 +851,7 @@
                 14,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
@@ -650,7 +879,7 @@
                 14,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_16"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_147"
         },
         {
             "pos": [
@@ -678,6 +907,20 @@
                 14,
                 9
             ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
+        },
+        {
+            "pos": [
+                14,
+                10
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_22"
+        },
+        {
+            "pos": [
+                14,
+                11
+            ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
@@ -699,21 +942,21 @@
                 15,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_75"
+            "tile": "dungeon-tileset.json:border"
         },
         {
             "pos": [
                 15,
                 2
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_73"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
         },
         {
             "pos": [
                 15,
                 3
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_73"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
@@ -755,6 +998,20 @@
                 15,
                 9
             ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
+        },
+        {
+            "pos": [
+                15,
+                10
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_22"
+        },
+        {
+            "pos": [
+                15,
+                11
+            ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
@@ -776,46 +1033,46 @@
                 16,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_10"
+            "tile": "dungeon-tileset.json:border"
         },
         {
             "pos": [
                 16,
                 2
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_8"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
         },
         {
             "pos": [
                 16,
                 3
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_8"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
                 16,
                 4
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_7"
+            "tile": "dungeon-tileset.json:border"
         },
         {
             "pos": [
                 16,
                 5
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_2"
+        },
+        {
+            "pos": [
+                16,
+                6
             ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_0"
         },
         {
             "pos": [
                 16,
-                6
-            ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
-        },
-        {
-            "pos": [
-                16,
                 7
             ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
@@ -831,6 +1088,20 @@
             "pos": [
                 16,
                 9
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
+        },
+        {
+            "pos": [
+                16,
+                10
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_22"
+        },
+        {
+            "pos": [
+                16,
+                11
             ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
@@ -853,7 +1124,7 @@
                 17,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
@@ -881,14 +1152,14 @@
                 17,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
         },
         {
             "pos": [
                 17,
                 6
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
             "pos": [
@@ -908,6 +1179,20 @@
             "pos": [
                 17,
                 9
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
+        },
+        {
+            "pos": [
+                17,
+                10
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_22"
+        },
+        {
+            "pos": [
+                17,
+                11
             ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
@@ -930,7 +1215,7 @@
                 18,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
@@ -958,112 +1243,126 @@
                 18,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
         },
         {
             "pos": [
                 18,
                 6
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
             "pos": [
                 18,
                 7
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
+            "tile": "dungeon-tileset.json:border"
         },
         {
             "pos": [
                 18,
                 8
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
+            "tile": "dungeon-tileset.json:border"
         },
         {
             "pos": [
                 18,
                 9
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_67"
         },
         {
             "pos": [
                 18,
-                14
-            ],
-            "tile": "dungeon-tileset.json:border"
-        },
-        {
-            "pos": [
-                19,
-                0
-            ],
-            "tile": "dungeon-tileset.json:border"
-        },
-        {
-            "pos": [
-                19,
-                1
-            ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
-        },
-        {
-            "pos": [
-                19,
-                2
-            ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
-        },
-        {
-            "pos": [
-                19,
-                3
-            ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
-        },
-        {
-            "pos": [
-                19,
-                4
-            ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
-        },
-        {
-            "pos": [
-                19,
-                5
-            ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
-        },
-        {
-            "pos": [
-                19,
-                6
-            ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
-        },
-        {
-            "pos": [
-                19,
-                7
+                10
             ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_66"
         },
         {
             "pos": [
+                18,
+                11
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_65"
+        },
+        {
+            "pos": [
+                18,
+                14
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                19,
+                0
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                19,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
+        },
+        {
+            "pos": [
+                19,
+                2
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
+        },
+        {
+            "pos": [
+                19,
+                3
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
+        },
+        {
+            "pos": [
+                19,
+                4
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
+        },
+        {
+            "pos": [
+                19,
+                5
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
+        },
+        {
+            "pos": [
+                19,
+                6
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+        },
+        {
+            "pos": [
+                19,
+                7
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
                 19,
                 8
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_66"
+            "tile": "dungeon-tileset.json:border"
         },
         {
             "pos": [
                 19,
                 9
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_57"
+            "tile": "dungeon-tileset.json:border"
         },
         {
             "pos": [
@@ -1098,7 +1397,7 @@
                 20,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
@@ -1126,14 +1425,14 @@
                 20,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
         },
         {
             "pos": [
                 20,
                 6
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
             "pos": [
@@ -1154,7 +1453,7 @@
                 20,
                 9
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_137"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
         },
         {
             "pos": [
@@ -1189,7 +1488,7 @@
                 21,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
@@ -1217,25 +1516,25 @@
                 21,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
         },
         {
             "pos": [
                 21,
                 6
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+        },
+        {
+            "pos": [
+                21,
+                7
             ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_64"
         },
         {
             "pos": [
                 21,
-                7
-            ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_64"
-        },
-        {
-            "pos": [
-                21,
                 8
             ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
@@ -1280,7 +1579,7 @@
                 22,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
@@ -1308,14 +1607,14 @@
                 22,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
         },
         {
             "pos": [
                 22,
                 6
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_64"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
             "pos": [
@@ -1371,7 +1670,7 @@
                 23,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
@@ -1399,14 +1698,14 @@
                 23,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
         },
         {
             "pos": [
                 23,
                 6
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
             "pos": [
@@ -1420,7 +1719,7 @@
                 23,
                 8
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_139"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
         },
         {
             "pos": [
@@ -1462,46 +1761,46 @@
                 24,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_49"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
                 24,
                 2
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_150"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
                 24,
                 3
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_150"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
                 24,
                 4
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_150"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_102"
         },
         {
             "pos": [
                 24,
                 5
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_47"
+        },
+        {
+            "pos": [
+                24,
+                6
             ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_48"
         },
         {
             "pos": [
                 24,
-                6
-            ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
-        },
-        {
-            "pos": [
-                24,
                 7
             ],
             "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
@@ -1553,7 +1852,7 @@
                 25,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_12"
         },
         {
             "pos": [
@@ -1581,14 +1880,14 @@
                 25,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
         },
         {
             "pos": [
                 25,
                 6
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
             "pos": [
@@ -1644,7 +1943,7 @@
                 26,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_51"
         },
         {
             "pos": [
@@ -1672,14 +1971,14 @@
                 26,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_60"
         },
         {
             "pos": [
                 26,
                 6
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
             "pos": [
@@ -1700,7 +1999,7 @@
                 26,
                 9
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_137"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
         },
         {
             "pos": [
@@ -1735,7 +2034,7 @@
                 27,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_51"
         },
         {
             "pos": [
@@ -1763,14 +2062,14 @@
                 27,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_60"
         },
         {
             "pos": [
                 27,
                 6
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_64"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
             "pos": [
@@ -1826,7 +2125,7 @@
                 28,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_51"
         },
         {
             "pos": [
@@ -1854,14 +2153,14 @@
                 28,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_60"
         },
         {
             "pos": [
                 28,
                 6
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
             "pos": [
@@ -1917,7 +2216,7 @@
                 29,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_51"
         },
         {
             "pos": [
@@ -1945,7 +2244,7 @@
                 29,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
         },
         {
             "pos": [
@@ -2008,7 +2307,7 @@
                 30,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_51"
         },
         {
             "pos": [
@@ -2036,7 +2335,7 @@
                 30,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
         },
         {
             "pos": [
@@ -2099,7 +2398,7 @@
                 31,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_51"
         },
         {
             "pos": [
@@ -2127,14 +2426,14 @@
                 31,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_15"
         },
         {
             "pos": [
                 31,
                 6
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
             "pos": [
@@ -2155,7 +2454,7 @@
                 31,
                 9
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_139"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
         },
         {
             "pos": [
@@ -2190,7 +2489,7 @@
                 32,
                 1
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_25"
         },
         {
             "pos": [
@@ -2218,14 +2517,14 @@
                 32,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_34"
         },
         {
             "pos": [
                 32,
                 6
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_129"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_13"
         },
         {
             "pos": [
@@ -2309,14 +2608,14 @@
                 33,
                 5
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_42"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_66"
         },
         {
             "pos": [
                 33,
                 6
             ],
-            "tile": "dungeon-tileset.json:Dungeon_Tileset_74"
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_65"
         },
         {
             "pos": [
@@ -2364,6 +2663,83 @@
             "pos": [
                 34,
                 0
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                34,
+                1
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                34,
+                2
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                34,
+                3
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                34,
+                4
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                34,
+                5
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                34,
+                6
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                34,
+                7
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                34,
+                8
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                34,
+                9
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                34,
+                10
+            ],
+            "tile": "dungeon-tileset.json:border"
+        },
+        {
+            "pos": [
+                34,
+                11
             ],
             "tile": "dungeon-tileset.json:border"
         },
@@ -2492,6 +2868,323 @@
                 14
             ],
             "tile": "dungeon-tileset.json:border"
+        }
+    ],
+    "tiles_decor": [
+        {
+            "pos": [
+                10,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_23"
+        },
+        {
+            "pos": [
+                10,
+                7
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_139"
+        },
+        {
+            "pos": [
+                11,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_23"
+        },
+        {
+            "pos": [
+                12,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_23"
+        },
+        {
+            "pos": [
+                13,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_23"
+        },
+        {
+            "pos": [
+                13,
+                2
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_139"
+        },
+        {
+            "pos": [
+                14,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_23"
+        },
+        {
+            "pos": [
+                15,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_75"
+        },
+        {
+            "pos": [
+                15,
+                8
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_139"
+        },
+        {
+            "pos": [
+                16,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_10"
+        },
+        {
+            "pos": [
+                16,
+                4
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_9"
+        },
+        {
+            "pos": [
+                17,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+        },
+        {
+            "pos": [
+                18,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_23"
+        },
+        {
+            "pos": [
+                18,
+                7
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_73"
+        },
+        {
+            "pos": [
+                18,
+                8
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_73"
+        },
+        {
+            "pos": [
+                19,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_23"
+        },
+        {
+            "pos": [
+                19,
+                7
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_8"
+        },
+        {
+            "pos": [
+                19,
+                8
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_8"
+        },
+        {
+            "pos": [
+                19,
+                9
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_9"
+        },
+        {
+            "pos": [
+                20,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_23"
+        },
+        {
+            "pos": [
+                21,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_23"
+        },
+        {
+            "pos": [
+                21,
+                9
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_138"
+        },
+        {
+            "pos": [
+                22,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_23"
+        },
+        {
+            "pos": [
+                23,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_23"
+        },
+        {
+            "pos": [
+                23,
+                7
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_138"
+        },
+        {
+            "pos": [
+                24,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_49"
+        },
+        {
+            "pos": [
+                24,
+                2
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_150"
+        },
+        {
+            "pos": [
+                24,
+                3
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_150"
+        },
+        {
+            "pos": [
+                24,
+                4
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_150"
+        },
+        {
+            "pos": [
+                24,
+                5
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_150"
+        },
+        {
+            "pos": [
+                25,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+        },
+        {
+            "pos": [
+                25,
+                4
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_139"
+        },
+        {
+            "pos": [
+                26,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+        },
+        {
+            "pos": [
+                27,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+        },
+        {
+            "pos": [
+                28,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+        },
+        {
+            "pos": [
+                29,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+        },
+        {
+            "pos": [
+                29,
+                4
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_95"
+        },
+        {
+            "pos": [
+                29,
+                5
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_41"
+        },
+        {
+            "pos": [
+                29,
+                6
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_39"
+        },
+        {
+            "pos": [
+                30,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+        },
+        {
+            "pos": [
+                30,
+                5
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_41"
+        },
+        {
+            "pos": [
+                30,
+                6
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_39"
+        },
+        {
+            "pos": [
+                31,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
+        },
+        {
+            "pos": [
+                31,
+                9
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_138"
+        },
+        {
+            "pos": [
+                32,
+                1
+            ],
+            "tile": "dungeon-tileset.json:Dungeon_Tileset_36"
         }
     ],
     "width": 37

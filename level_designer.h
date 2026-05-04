@@ -5,9 +5,11 @@
 #include "level.h"
 #include "vec.h"
 
+enum Mode{Base, Decor}; // change mode with button click? Add mode to LevelDesigner contructor?
+
 class LevelDesigner {
 public:
-    LevelDesigner(const std::string& level_name, int width, int height);
+    LevelDesigner(const std::string& level_name, int width, int height, Mode mode);
     void handle_event(SDL_Event* event);
     void input();
     void render();
@@ -16,7 +18,9 @@ public:
 private:
     Graphics graphics;
     Tilemap tilemap;
+    Tilemap decormap;
     Level level;
+    Mode mode;
 
     Vec<int> selected_tile{-1, -1};
     int y_min{0};

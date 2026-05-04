@@ -1765,7 +1765,7 @@
                 "dt_per_frame": -1
             },
             "blocking": false,
-            "event_name": "next_level"
+            "event_name": "locked_level"
         },
         {
             "sprite": {
@@ -1803,7 +1803,7 @@
                 "dt_per_frame": -1
             },
             "blocking": false,
-            "event_name": "next_level"
+            "event_name": "locked_level"
         },
         {
             "sprite": {
