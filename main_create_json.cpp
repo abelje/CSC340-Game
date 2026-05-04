@@ -85,10 +85,6 @@ int main() {
     auto enemy_json = generate_enemy_json(filename, names, locations, tilesize, scale, number_of_frames, dt_per_frame);
     output_json(enemy_json, "output.json");
   }
-  // ordered_json tileset_json = generate_tileset_json("Overworld_Tileset.png", 288, 208, 16, 4);
-  // output_json(tileset_json, "output.json");
-  // edit_tile("output.json", 0, 0, "name", "Hello World!");
-  // remove_tile("output.json", 0, 0);
 }
 
 ordered_json generate_tileset_json(std::string filename, int img_width, int img_height, int tilesize, int scale, bool blocking) {
@@ -213,17 +209,17 @@ ordered_json generate_enemy_json(std::string filename, std::vector<std::string> 
     // Add sprite
     std::string name = names.at(k);
     auto& [row, col] = locations[name];
-    j["sprites"] += {{"sprite",
+    j["sprites"] += {
       {
-            {"name", name},
-            {"filename", filename},
-            {"location", {row, col}},
-            {"size", {tilesize, tilesize}},
-            {"scale", scale},
-            {"number_of_frames", number_of_frames},
-            {"dt_per_frame", dt_per_frame}
+          {"name", name},
+          {"filename", filename},
+          {"location", {row, col}},
+          {"size", {tilesize, tilesize}},
+          {"scale", scale},
+          {"number_of_frames", number_of_frames},
+          {"dt_per_frame", dt_per_frame}
       }
-    }};
+    };
     ++i;
   }
   std::cout << i << " sprite animations generated!\n";
