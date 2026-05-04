@@ -6,6 +6,13 @@
                 15.0,
                 8.0
             ]
+        },
+        {
+            "enemy": "pinkslime",
+            "pos": [
+                30.0,
+                3.0
+            ]
         }
     ],
     "height": 15,
@@ -29,7 +36,6 @@
             "loop_forever": false,
             "name": "arrow"
         }
-
     ],
     "tile_filenames": [
         "overworld-tileset.json"

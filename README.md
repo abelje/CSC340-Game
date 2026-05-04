@@ -1,6 +1,18 @@
-# Top Down Game
-This a current in development game being created during Game Dev. The current plan is to make a top-down game similar to
-the Legend of Zelda.
+# Hero's Quest
+This is a top-down Legend of Zelda inspired game. This game was created in CSC340 Game Development. Created using SDL3.
+
+## Gameplay Controls
+- W, A, S, D controls movement.
+- K shoots arrows.
+- M attacks all enemies
+
+## Level Designer
+- Arrow Keys moves the map around.
+- 1 inserts a pinkslime enemy
+- 2 inserts a spider enemy
+- p places the player
+- Delete or Backspace deletes a placed tile
+- Decor layer and Base Layer can be switched in main_designer.cpp
 
 ## Credits
 Top Down Adventure Pack can be found on [https://o-lobster.itch.io](https://o-lobster.itch.io).
