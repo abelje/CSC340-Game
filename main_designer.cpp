@@ -24,7 +24,7 @@ SDL_AppResult SDL_AppInit(void **appstate, int, char**) {
             mode = Mode::Base;
         }
         else {
-            throw std::runtime_error("Invalid input!");
+            throw std::runtime_error("Invalid mode input!");
         }
         auto designer = new LevelDesigner(level, 37, 15, mode);
         *appstate = designer;
